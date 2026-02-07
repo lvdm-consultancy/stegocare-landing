@@ -13,7 +13,7 @@ interface LocaleOption {
 const localeOptions: Record<string, LocaleOption> = {
   en: { flag: "🇬🇧", label: "EN" },
   fr: { flag: "🇫🇷", label: "FR" },
-  nl: { flag: "", label: "NL" },
+  nl: { flag: "🇳🇱", label: "NL" },
 };
 
 export default function LanguageSwitcher() {

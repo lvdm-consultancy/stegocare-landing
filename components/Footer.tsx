@@ -86,8 +86,8 @@ export default function Footer() {
             {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-sm text-gray-400 hover:text-black transition-colors">{t("privacyPolicy")}</a>
-            <a href="#" className="text-sm text-gray-400 hover:text-black transition-colors">{t("termsOfService")}</a>
+            <a href="/privacy" className="text-sm text-gray-400 hover:text-black transition-colors">{t("privacyPolicy")}</a>
+            <a href="/terms" className="text-sm text-gray-400 hover:text-black transition-colors">{t("termsOfService")}</a>
           </div>
         </div>
       </div>

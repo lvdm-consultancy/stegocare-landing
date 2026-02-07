@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 interface NavLink {
@@ -22,6 +22,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const t = useTranslations("navbar");
+  const locale = useLocale();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -42,7 +43,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2" aria-label="Stegocare home">
+          <a href={`/${locale}`} className="flex items-center gap-2" aria-label="Stegocare home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logos/careville-logo-temp.png" alt="Stegocare logo" className="w-8 h-8 rounded" />
             <span className="text-lg font-semibold tracking-tight text-black">
@@ -55,7 +56,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={`/${locale}${link.href}`}
                 className="text-sm text-gray-600 hover:text-black transition-colors"
               >
                 {t(link.labelKey)}
@@ -66,12 +67,6 @@ export default function Navbar() {
           {/* CTA buttons */}
           <div className="flex items-center gap-3">
             <LanguageSwitcher />
-            <a
-              href="#contact"
-              className="hidden md:inline-flex text-sm text-gray-600 hover:text-black transition-colors px-4 py-2 border border-gray-200 hover:border-gray-300"
-            >
-              {t("signIn")}
-            </a>
             <a
               href="https://calendly.com/simon-lvdmconsultancy/30min"
               target="_blank"
@@ -110,7 +105,7 @@ export default function Navbar() {
               {navLinks.map((link) => (
                 <a
                   key={link.href}
-                  href={link.href}
+                  href={`/${locale}${link.href}`}
                   className="block text-gray-600 font-medium py-3 px-3 hover:bg-gray-50 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -118,13 +113,6 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="pt-3 space-y-2">
-                <a
-                  href="#contact"
-                  className="block text-center text-sm text-gray-600 py-2.5 border border-gray-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {t("signIn")}
-                </a>
                 <a
                   href="https://calendly.com/simon-lvdmconsultancy/30min"
                   target="_blank"
