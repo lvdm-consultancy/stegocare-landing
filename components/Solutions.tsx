@@ -58,7 +58,7 @@ const solutions: Solution[] = [
 
 export default function Solutions() {
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section className="py-20 lg:py-28 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">
