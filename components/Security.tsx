@@ -32,7 +32,7 @@ function GDPRIcon() {
       {starPositions.map((pos, i) => (
         <polygon
           key={i}
-          points={starPolygonPoints(pos.cx, pos.cy, 2.2)}
+          points={starPolygonPoints(pos.cx, pos.cy, 3.5)}
           fill="currentColor"
         />
       ))}

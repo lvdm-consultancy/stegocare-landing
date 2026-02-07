@@ -1,6 +1,5 @@
 "use client";
 
-import StegocareLogo from "./StegocareLogo";
 
 interface FooterLink {
   label: string;
@@ -52,7 +51,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <a href="#" className="flex items-center gap-2 mb-5">
-              <StegocareLogo size={28} className="text-black" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logos/careville-logo-temp.png" alt="Stegocare logo" className="w-7 h-7 rounded" />
               <span className="text-lg font-semibold tracking-tight text-black">
                 Stegocare
               </span>

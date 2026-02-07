@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import StegocareLogo from "./StegocareLogo";
 
 interface NavLink {
   label: string;
@@ -41,7 +40,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2" aria-label="Stegocare home">
-            <StegocareLogo size={32} className="text-black" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logos/careville-logo-temp.png" alt="Stegocare logo" className="w-8 h-8 rounded" />
             <span className="text-lg font-semibold tracking-tight text-black">
               Stegocare
             </span>
