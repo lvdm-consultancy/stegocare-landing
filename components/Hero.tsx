@@ -3,19 +3,23 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const rotatingWords = ["simplified.", "unified.", "digitized."];
+const rotatingWordKeys = ["simplified", "unified", "digitized"] as const;
 
 
 export default function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
+  const t = useTranslations("hero");
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setWordIndex((prev) => (prev + 1) % rotatingWords.length);
+      setWordIndex((prev) => (prev + 1) % rotatingWordKeys.length);
     }, 2500);
     return () => clearInterval(interval);
   }, []);
+
+  const currentWordKey = rotatingWordKeys[wordIndex];
 
   return (
     <section className="relative pt-40 pb-16 lg:pt-48 lg:pb-20 bg-gradient-to-b from-white via-white to-gray-100 overflow-hidden">
@@ -27,7 +31,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 bg-gray-100 rounded-full text-xs font-medium text-gray-600 tracking-wide uppercase mb-8"
         >
-          Healthcare Management Platform
+          {t("badge")}
         </motion.div>
 
         {/* Headline */}
@@ -37,19 +41,19 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-black leading-[1.05] tracking-tight"
         >
-          Reliable care,
+          {t("headlineStart")}
           <br />
           <span className="inline-block relative">
             <AnimatePresence mode="wait">
               <motion.span
-                key={rotatingWords[wordIndex]}
+                key={currentWordKey}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="inline-block"
               >
-                {rotatingWords[wordIndex]}
+                {t(`rotatingWords.${currentWordKey}`)}
               </motion.span>
             </AnimatePresence>
           </span>
@@ -70,8 +74,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 text-lg lg:text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto"
         >
-          Stegocare takes on the complexity, so your team can focus on what only
-          humans can do. Planning done. Billing handled. Compliance covered.
+          {t("subtitle")}
         </motion.p>
 
         {/* CTA Buttons */}
@@ -87,14 +90,14 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-black text-white font-medium text-sm hover:bg-primary-light transition-colors"
           >
-            Book a demo
+            {t("bookDemo")}
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
             href="#features"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-gray-200 text-gray-700 font-medium text-sm hover:border-gray-300 hover:bg-gray-50 transition-colors"
           >
-            How it works
+            {t("howItWorks")}
             <ArrowRight className="w-4 h-4" />
           </a>
         </motion.div>
@@ -118,7 +121,7 @@ export default function Hero() {
               />
             </div>
 
-            {/* Mobile Phone Mockup */}
+            {/* Mobile Phone Mockup — stays in Dutch (design element) */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -295,11 +298,11 @@ export default function Hero() {
           <div className="flex justify-center gap-8 mt-8 lg:mt-12">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-[#1B2B4B]" />
-              <span className="text-xs text-gray-500">Back Office</span>
+              <span className="text-xs text-gray-500">{t("backOffice")}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-gray-400" />
-              <span className="text-xs text-gray-500">Mobile App</span>
+              <span className="text-xs text-gray-500">{t("mobileApp")}</span>
             </div>
           </div>
         </motion.div>

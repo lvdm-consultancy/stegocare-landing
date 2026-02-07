@@ -1,0 +1,164 @@
+{
+  "announcementBar": {
+    "message": "Premi\u00e8re version disponible en ao\u00fbt",
+    "cta": "Acc\u00e8s anticipé",
+    "dismiss": "Fermer l'annonce"
+  },
+  "navbar": {
+    "features": "Fonctionnalit\u00e9s",
+    "integrations": "Int\u00e9grations",
+    "security": "S\u00e9curit\u00e9",
+    "contact": "Contact",
+    "signIn": "Connexion",
+    "bookDemo": "R\u00e9server une d\u00e9mo",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "hero": {
+    "badge": "Conçu pour les soins 🇧🇪 belges",
+    "headlineStart": "Des soins fiables,",
+    "rotatingWords": {
+      "simplified": "simplifi\u00e9s.",
+      "unified": "unifi\u00e9s.",
+      "digitized": "digitalis\u00e9s."
+    },
+    "subtitle": "Stegocare prend en charge la complexit\u00e9, pour que votre \u00e9quipe puisse se concentrer sur l'essentiel. Planning g\u00e9r\u00e9. Facturation trait\u00e9e. Conformit\u00e9 assur\u00e9e.",
+    "bookDemo": "R\u00e9server une d\u00e9mo",
+    "howItWorks": "Comment \u00e7a marche",
+    "backOffice": "Back Office",
+    "mobileApp": "Application Mobile"
+  },
+  "featureCarousel": {
+    "sectionLabel": "Fonctionnalit\u00e9s",
+    "heading": "Tout ce dont votre organisation de soins a besoin",
+    "previousFeature": "Fonctionnalit\u00e9 pr\u00e9c\u00e9dente",
+    "nextFeature": "Fonctionnalit\u00e9 suivante",
+    "tabs": {
+      "planning": {
+        "label": "Planning",
+        "headline": "Planification dynamique en temps r\u00e9el",
+        "description": "Les notifications push synchronisent parfaitement les travailleurs de terrain et les planificateurs. Les changements de planning se propagent instantan\u00e9ment, r\u00e9duisant les absences et les malentendus."
+      },
+      "crm": {
+        "label": "CRM",
+        "headline": "Tous vos clients en un seul endroit",
+        "description": "G\u00e9rez les profils clients, suivez l'historique des soins et acc\u00e9dez aux informations cl\u00e9s instantan\u00e9ment. Tout ce dont votre \u00e9quipe a besoin pour des soins personnalis\u00e9s."
+      },
+      "billing": {
+        "label": "Facturation",
+        "headline": "Facturation automatis\u00e9e sans erreurs",
+        "description": "G\u00e9rez les changements de tarifs en cours de mois, les calculs de temps de d\u00e9placement et les normes de facturation  belges automatiquement. Conformit\u00e9 r\u00e9glementaire int\u00e9gr\u00e9e."
+      },
+      "hr": {
+        "label": "RH & Paie",
+        "headline": "Une source unique de v\u00e9rit\u00e9 pour votre \u00e9quipe",
+        "description": "Les donn\u00e9es de performance sont transmises directement \u00e0 Liantis et Hora via API. Plus de double saisie, plus d'erreurs de paie. Gagnez des heures chaque mois."
+      },
+      "mobile": {
+        "label": "Mobile",
+        "headline": "Con\u00e7u pour les soignants sur le terrain",
+        "description": "Enregistrez les interventions, suivez les kilom\u00e8tres par GPS et signalez les incidents en quelques secondes. Tout se synchronise instantan\u00e9ment avec le bureau."
+      }
+    }
+  },
+  "integrationLogos": {
+    "sectionLabel": "Int\u00e9grations de Confiance",
+    "heading": "Connect\u00e9 de mani\u00e8re transparente aux plateformes sur lesquelles vous comptez",
+    "addMore": "Et plus"
+  },
+  "scrollRevealText": {
+    "block1": "Votre \u00e9quipe n'a pas choisi le secteur des soins pour passer la moiti\u00e9 de sa journ\u00e9e sur de l'administratif.",
+    "block2": "Mais entre le planning sur Excel, la facturation manuelle et les signatures papier \u00e0 r\u00e9cup\u00e9rer \u2014 c'est exactement ce qui se passe.",
+    "block3": "Chaque heure perdue en admin est une heure en moins pour ceux qui ont le plus besoin de vous."
+  },
+  "solutions": {
+    "sectionLabel": "La Solution",
+    "heading": "Une plateforme pour toutes les remplacer",
+    "subtitle": "Stegocare r\u00e9unit planning, admission, facturation, RH et conformit\u00e9 dans un seul syst\u00e8me con\u00e7u pour les organisations de soins  belges.",
+    "items": {
+      "planning": {
+        "title": "Planning en Temps R\u00e9el",
+        "description": "Les notifications push synchronisent les travailleurs de terrain et les planificateurs. Les changements se propagent instantan\u00e9ment."
+      },
+      "intake": {
+        "title": "Admission Num\u00e9rique & QES",
+        "description": "Signatures juridiquement contraignantes via itsme\u00ae et eID  belge. Enti\u00e8rement num\u00e9rique, enti\u00e8rement auditable."
+      },
+      "billing": {
+        "title": "Facturation Automatis\u00e9e",
+        "description": "Changements de tarifs en cours de mois, temps de trajet et facturation sant\u00e9  belge \u2014 tout g\u00e9r\u00e9 automatiquement."
+      },
+      "hr": {
+        "title": "Sync RH & Paie",
+        "description": "Les donn\u00e9es de performance sont transmises directement \u00e0 Liantis et Hora via API. Plus de double saisie."
+      },
+      "mobile": {
+        "title": "Mobile pour Soignants",
+        "description": "Enregistrez les interventions, suivez les kilom\u00e8tres par GPS et signalez les incidents en quelques secondes."
+      },
+      "government": {
+        "title": "Int\u00e9gration Gouvernementale",
+        "description": "R\u00e9cup\u00e9ration automatique des scores BelRAI et \u00e9change de donn\u00e9es VESTA en temps r\u00e9el."
+      }
+    }
+  },
+  "imageHero": {
+    "heading": "Con\u00e7u pour les r\u00e9alit\u00e9s du travail de soins",
+    "subtitle": "Du back office au domicile du patient, Stegocare fonctionne partout o\u00f9 votre \u00e9quipe se trouve.",
+    "pillars": {
+      "backOffice": {
+        "title": "Back Office",
+        "description": "Planning, facturation, RH et conformit\u00e9 \u2014 le tout depuis un seul tableau de bord. Fini le passage d'un outil \u00e0 l'autre.",
+        "stat": "-60%",
+        "statLabel": "Temps admin"
+      },
+      "field": {
+        "title": "Sur le Terrain",
+        "description": "Vos soignants disposent d'une application mobile qui fonctionne hors ligne. Enregistrez les visites, suivez les trajets et signalez les incidents en quelques secondes.",
+        "stat": "Temps r\u00e9el",
+        "statLabel": "Synchronisation"
+      },
+      "compliance": {
+        "title": "Conformit\u00e9",
+        "description": "Pistes d'audit automatis\u00e9es, int\u00e9grations gouvernementales et rapports r\u00e9glementaires. Toujours pr\u00eat pour l'audit, sans effort.",
+        "stat": "100%",
+        "statLabel": "Taux de conformit\u00e9"
+      }
+    }
+  },
+  "security": {
+    "heading": "S\u00e9curis\u00e9. Prouv\u00e9.\nPr\u00eat \u00e0 \u00e9voluer avec vous.",
+    "badges": {
+      "gdpr": "Conforme RGPD",
+      "nis2": "Conforme NIS2"
+    }
+  },
+  "callToAction": {
+    "heading": "Arr\u00eatez de colmater vos syst\u00e8mes.\nCommencez \u00e0 soigner.",
+    "subtitle": "Vous ne pouvez pas construire l'organisation de soins de demain avec les outils d'hier.",
+    "emailPlaceholder": "Entrez votre email pour les mises \u00e0 jour",
+    "stayUpdated": "Rester inform\u00e9",
+    "subscribed": "Inscrit",
+    "thankYou": "Merci ! Nous vous tiendrons au courant.",
+    "or": "ou",
+    "bookDemo": "R\u00e9server une d\u00e9mo"
+  },
+  "footer": {
+    "description": "Gestion int\u00e9gr\u00e9e de nouvelle g\u00e9n\u00e9ration pour les organisations de soins  belges.",
+    "navigation": "Navigation",
+    "home": "Accueil",
+    "features": "Fonctionnalit\u00e9s",
+    "security": "S\u00e9curit\u00e9",
+    "contact": "Contact",
+    "product": "Produit",
+    "planning": "Planning",
+    "crm": "CRM",
+    "billing": "Facturation",
+    "hrPayroll": "RH & Paie",
+    "mobileApp": "Application Mobile",
+    "integrations": "Int\u00e9grations",
+    "copyright": "\u00a9 {year} Stegocare par LVDM Consultancy. Tous droits r\u00e9serv\u00e9s.",
+    "privacyPolicy": "Politique de Confidentialit\u00e9",
+    "termsOfService": "Conditions d'Utilisation"
+  }
+}

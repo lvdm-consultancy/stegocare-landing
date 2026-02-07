@@ -1,0 +1,164 @@
+{
+  "announcementBar": {
+    "message": "Eerste versie lanceert in augustus",
+    "cta": "Vraag vroege toegang aan",
+    "dismiss": "Melding sluiten"
+  },
+  "navbar": {
+    "features": "Functies",
+    "integrations": "Integraties",
+    "security": "Beveiliging",
+    "contact": "Contact",
+    "signIn": "Inloggen",
+    "bookDemo": "Boek een demo",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten"
+  },
+  "hero": {
+    "badge": "Gebouwd voor 🇧🇪 Belgische zorg",
+    "headlineStart": "Betrouwbare zorg,",
+    "rotatingWords": {
+      "simplified": "vereenvoudigd.",
+      "unified": "ge\u00fcnificeerd.",
+      "digitized": "gedigitaliseerd."
+    },
+    "subtitle": "Stegocare neemt de complexiteit op zich, zodat uw team zich kan focussen op wat alleen mensen kunnen doen. Planning geregeld. Facturatie afgehandeld. Compliance gedekt.",
+    "bookDemo": "Boek een demo",
+    "howItWorks": "Hoe het werkt",
+    "backOffice": "Back Office",
+    "mobileApp": "Mobiele App"
+  },
+  "featureCarousel": {
+    "sectionLabel": "Functies",
+    "heading": "Alles wat uw zorgorganisatie nodig heeft",
+    "previousFeature": "Vorige functie",
+    "nextFeature": "Volgende functie",
+    "tabs": {
+      "planning": {
+        "label": "Planning",
+        "headline": "Dynamische planning die in real-time aanpast",
+        "description": "Push notificaties houden veldwerkers en planners perfect gesynchroniseerd. Wijzigingen worden direct doorgevoerd, waardoor no-shows en miscommunicatie afnemen."
+      },
+      "crm": {
+        "label": "CRM",
+        "headline": "Al uw cli\u00ebnten op \u00e9\u00e9n plek",
+        "description": "Beheer cli\u00ebntprofielen, volg zorggeschiedenis en raadpleeg belangrijke informatie direct. Alles wat uw team nodig heeft voor gepersonaliseerde zorg."
+      },
+      "billing": {
+        "label": "Facturatie",
+        "headline": "Geautomatiseerde facturatie zonder fouten",
+        "description": "Verwerk tariefwijzigingen halverwege de maand, reistijdberekeningen en  Belgische zorgnormen automatisch. Volledige regelgevingsconformiteit ingebouwd."
+      },
+      "hr": {
+        "label": "HR & Payroll",
+        "headline": "E\u00e9n bron van waarheid voor uw team",
+        "description": "Prestatiegegevens stromen direct naar Liantis en Hora via API. Geen dubbele invoer meer, geen payroll-fouten meer. Bespaar elke maand uren."
+      },
+      "mobile": {
+        "label": "Mobiel",
+        "headline": "Gebouwd voor zorgverleners in het veld",
+        "description": "Registreer interventies, volg kilometers via GPS en meld incidenten in seconden. Alles synchroniseert direct met kantoor."
+      }
+    }
+  },
+  "integrationLogos": {
+    "sectionLabel": "Vertrouwde Integraties",
+    "heading": "Naadloos verbonden met de platformen waarop u vertrouwt",
+    "addMore": "En meer"
+  },
+  "scrollRevealText": {
+    "block1": "Uw team koos niet voor de zorg om de helft van hun dag aan administratie te besteden.",
+    "block2": "Maar tussen planning in Excel, handmatig factureren en papieren handtekeningen najagen \u2014 is dat precies wat er gebeurt.",
+    "block3": "Elk uur verloren aan admin is een uur minder voor de mensen die u het meest nodig hebben."
+  },
+  "solutions": {
+    "sectionLabel": "De Oplossing",
+    "heading": "E\u00e9n platform om ze allemaal te vervangen",
+    "subtitle": "Stegocare brengt planning, intake, facturatie, HR en compliance samen in \u00e9\u00e9n systeem gebouwd voor  Belgische zorgorganisaties.",
+    "items": {
+      "planning": {
+        "title": "Realtime Planning",
+        "description": "Push notificaties houden veldwerkers en planners gesynchroniseerd. Wijzigingen worden direct doorgevoerd."
+      },
+      "intake": {
+        "title": "Digitale Intake & QES",
+        "description": "Juridisch bindende handtekeningen via itsme\u00ae en  Belgische eID. Volledig digitaal, volledig auditeerbaar."
+      },
+      "billing": {
+        "title": "Geautomatiseerde Facturatie",
+        "description": "Tariefwijzigingen halverwege de maand, reistijd en  Belgische zorgfacturatie \u2014 allemaal automatisch afgehandeld."
+      },
+      "hr": {
+        "title": "HR & Payroll Sync",
+        "description": "Prestatiegegevens stromen direct naar Liantis en Hora via API. Geen dubbele invoer meer."
+      },
+      "mobile": {
+        "title": "Mobiel voor Zorgverleners",
+        "description": "Registreer interventies, volg kilometers via GPS en meld incidenten in seconden."
+      },
+      "government": {
+        "title": "Overheidsintegratie",
+        "description": "Automatische BelRAI-score ophaling en realtime VESTA-gegevensuitwisseling."
+      }
+    }
+  },
+  "imageHero": {
+    "heading": "Gebouwd voor de realiteit van zorgwerk",
+    "subtitle": "Van het back office tot het huis van de pati\u00ebnt, Stegocare werkt overal waar uw team is.",
+    "pillars": {
+      "backOffice": {
+        "title": "Back Office",
+        "description": "Planning, facturatie, HR en compliance \u2014 allemaal vanuit \u00e9\u00e9n dashboard. Geen schakelen meer tussen losse tools.",
+        "stat": "-60%",
+        "statLabel": "Admin tijd"
+      },
+      "field": {
+        "title": "In het Veld",
+        "description": "Uw zorgverleners krijgen een mobiele app die offline werkt. Registreer bezoeken, volg reizen en meld incidenten in seconden.",
+        "stat": "Realtime",
+        "statLabel": "Synchronisatie"
+      },
+      "compliance": {
+        "title": "Compliance",
+        "description": "Geautomatiseerde audit trails, overheidsintegraties en regelgevende rapportage. Altijd audit-klaar, zonder moeite.",
+        "stat": "100%",
+        "statLabel": "Compliance-graad"
+      }
+    }
+  },
+  "security": {
+    "heading": "Veilig. Bewezen.\nKlaar om met u mee te groeien.",
+    "badges": {
+      "gdpr": "GDPR-conform",
+      "nis2": "NIS2-conform"
+    }
+  },
+  "callToAction": {
+    "heading": "Stop met systemen lappen.\nBegin met zorg verlenen.",
+    "subtitle": "U kunt de zorgorganisatie van morgen niet bouwen met de tools van gisteren.",
+    "emailPlaceholder": "Vul uw e-mail in voor updates",
+    "stayUpdated": "Blijf op de hoogte",
+    "subscribed": "Ingeschreven",
+    "thankYou": "Bedankt! We houden u op de hoogte.",
+    "or": "of",
+    "bookDemo": "Boek een demo"
+  },
+  "footer": {
+    "description": "Ge\u00efntegreerd zorgbeheer van de volgende generatie voor  Belgische zorgorganisaties.",
+    "navigation": "Navigatie",
+    "home": "Home",
+    "features": "Functies",
+    "security": "Beveiliging",
+    "contact": "Contact",
+    "product": "Product",
+    "planning": "Planning",
+    "crm": "CRM",
+    "billing": "Facturatie",
+    "hrPayroll": "HR & Payroll",
+    "mobileApp": "Mobiele App",
+    "integrations": "Integraties",
+    "copyright": "\u00a9 {year} Stegocare door LVDM Consultancy. Alle rechten voorbehouden.",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfService": "Gebruiksvoorwaarden"
+  }
+}

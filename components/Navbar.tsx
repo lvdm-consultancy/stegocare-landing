@@ -3,22 +3,25 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface NavLink {
-  label: string;
+  labelKey: string;
   href: string;
 }
 
 const navLinks: NavLink[] = [
-  { label: "Features", href: "#features" },
-  { label: "Integrations", href: "#integrations" },
-  { label: "Security", href: "#security" },
-  { label: "Contact", href: "#contact" },
+  { labelKey: "features", href: "#features" },
+  { labelKey: "integrations", href: "#integrations" },
+  { labelKey: "security", href: "#security" },
+  { labelKey: "contact", href: "#contact" },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const t = useTranslations("navbar");
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -55,18 +58,19 @@ export default function Navbar() {
                 href={link.href}
                 className="text-sm text-gray-600 hover:text-black transition-colors"
               >
-                {link.label}
+                {t(link.labelKey)}
               </a>
             ))}
           </div>
 
           {/* CTA buttons */}
           <div className="flex items-center gap-3">
+            <LanguageSwitcher />
             <a
               href="#contact"
               className="hidden md:inline-flex text-sm text-gray-600 hover:text-black transition-colors px-4 py-2 border border-gray-200 hover:border-gray-300"
             >
-              Sign in
+              {t("signIn")}
             </a>
             <a
               href="https://calendly.com/simon-lvdmconsultancy/30min"
@@ -74,12 +78,12 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center px-4 py-2 bg-black text-white text-sm font-medium hover:bg-primary-light transition-colors"
             >
-              Book a demo
+              {t("bookDemo")}
             </a>
             <button
               className="md:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={isMobileMenuOpen ? t("closeMenu") : t("openMenu")}
               aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? (
@@ -110,7 +114,7 @@ export default function Navbar() {
                   className="block text-gray-600 font-medium py-3 px-3 hover:bg-gray-50 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {link.label}
+                  {t(link.labelKey)}
                 </a>
               ))}
               <div className="pt-3 space-y-2">
@@ -119,7 +123,7 @@ export default function Navbar() {
                   className="block text-center text-sm text-gray-600 py-2.5 border border-gray-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Sign in
+                  {t("signIn")}
                 </a>
                 <a
                   href="https://calendly.com/simon-lvdmconsultancy/30min"
@@ -128,7 +132,7 @@ export default function Navbar() {
                   className="block text-center bg-black text-white font-medium py-2.5"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Book a demo
+                  {t("bookDemo")}
                 </a>
               </div>
             </div>

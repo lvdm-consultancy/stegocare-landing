@@ -2,10 +2,11 @@
 
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
+import { useTranslations } from "next-intl";
 
 interface SecurityBadge {
   icon: ReactNode;
-  label: string;
+  labelKey: string;
 }
 
 function starPolygonPoints(cx: number, cy: number, outerR: number): string {
@@ -48,87 +49,6 @@ function GDPRIcon() {
   );
 }
 
-function ISO27001Icon() {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" className="w-16 h-16 text-black">
-      <circle cx="32" cy="32" r="29" stroke="currentColor" strokeWidth="1.5" />
-      <text
-        x="32"
-        y="25"
-        textAnchor="middle"
-        fontSize="9"
-        fontWeight="800"
-        fill="currentColor"
-        style={{ fontFamily: "system-ui, sans-serif" }}
-      >
-        ISO
-      </text>
-      <text
-        x="32"
-        y="36"
-        textAnchor="middle"
-        fontSize="9"
-        fontWeight="800"
-        fill="currentColor"
-        style={{ fontFamily: "system-ui, sans-serif" }}
-      >
-        27001
-      </text>
-      <circle cx="32" cy="48" r="5" stroke="currentColor" strokeWidth="1" />
-      <ellipse
-        cx="32"
-        cy="48"
-        rx="2.5"
-        ry="5"
-        stroke="currentColor"
-        strokeWidth="0.7"
-      />
-      <line
-        x1="27"
-        y1="48"
-        x2="37"
-        y2="48"
-        stroke="currentColor"
-        strokeWidth="0.7"
-      />
-    </svg>
-  );
-}
-
-function EUHostedIcon() {
-  return (
-    <svg viewBox="0 0 64 64" fill="none" className="w-16 h-16 text-black">
-      <circle cx="32" cy="32" r="29" stroke="currentColor" strokeWidth="1.5" />
-      <path
-        d="M42 28A14 14 0 0 0 22 28"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-      />
-      <path
-        d="M24.5 24L22 28L25.5 29"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M22 36A14 14 0 0 0 42 36"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-      />
-      <path
-        d="M39.5 40L42 36L38.5 35"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 function NIS2Icon() {
   return (
     <svg viewBox="0 0 64 64" fill="none" className="w-16 h-16 text-black">
@@ -160,11 +80,13 @@ function NIS2Icon() {
 }
 
 const badges: SecurityBadge[] = [
-  { icon: <GDPRIcon />, label: "GDPR Compliant" },
-  { icon: <NIS2Icon />, label: "NIS2 Compliant" },
+  { icon: <GDPRIcon />, labelKey: "gdpr" },
+  { icon: <NIS2Icon />, labelKey: "nis2" },
 ];
 
 export default function Security() {
+  const t = useTranslations("security");
+
   return (
     <section id="security" className="py-16 lg:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -181,10 +103,8 @@ export default function Security() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 lg:mb-20"
         >
-          <h2 className="font-serif text-3xl lg:text-5xl font-bold text-black leading-tight">
-            Secure. Proven.
-            <br />
-            Ready to grow with you.
+          <h2 className="font-serif text-3xl lg:text-5xl font-bold text-black leading-tight whitespace-pre-line">
+            {t("heading")}
           </h2>
         </motion.div>
 
@@ -198,18 +118,18 @@ export default function Security() {
         >
           {badges.map((badge) => (
             <div
-              key={badge.label}
+              key={badge.labelKey}
               className="flex flex-col items-center gap-4"
             >
               {badge.icon}
               <span className="text-sm font-medium text-black border border-black/10 bg-white/70 px-4 py-1.5">
-                {badge.label}
+                {t(`badges.${badge.labelKey}`)}
               </span>
             </div>
           ))}
         </motion.div>
 
-       
+
           </div>
         </div>
       </div>
