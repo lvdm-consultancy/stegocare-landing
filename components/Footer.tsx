@@ -1,49 +1,42 @@
 "use client";
 
-
-interface FooterLink {
-  label: string;
-  href: string;
-}
-
-interface FooterColumn {
-  title: string;
-  links: FooterLink[];
-}
-
-const columns: FooterColumn[] = [
-  {
-    title: "Navigation",
-    links: [
-      { label: "Home", href: "#" },
-      { label: "Features", href: "#features" },
-      { label: "Security", href: "#security" },
-      { label: "Contact", href: "#contact" },
-    ],
-  },
-  {
-    title: "Product",
-    links: [
-      { label: "Planning", href: "#features" },
-      { label: "CRM", href: "#features" },
-      { label: "Billing", href: "#features" },
-      { label: "HR & Payroll", href: "#features" },
-      { label: "Mobile App", href: "#features" },
-    ],
-  },
-  {
-    title: "Integrations",
-    links: [
-      { label: "Vesta", href: "#integrations" },
-      { label: "Liantis", href: "#integrations" },
-      { label: "eHealth", href: "#integrations" },
-      { label: "BelRAI", href: "#integrations" },
-      { label: "itsme®", href: "#integrations" },
-    ],
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
+  const columns = [
+    {
+      titleKey: "navigation",
+      links: [
+        { labelKey: "home", href: "#" },
+        { labelKey: "features", href: "#features" },
+        { labelKey: "security", href: "#security" },
+        { labelKey: "contact", href: "#contact" },
+      ],
+    },
+    {
+      titleKey: "product",
+      links: [
+        { labelKey: "planning", href: "#features" },
+        { labelKey: "crm", href: "#features" },
+        { labelKey: "billing", href: "#features" },
+        { labelKey: "hrPayroll", href: "#features" },
+        { labelKey: "mobileApp", href: "#features" },
+      ],
+    },
+    {
+      titleKey: "integrations",
+      links: [
+        { label: "Vesta", href: "#integrations" },
+        { label: "Liantis", href: "#integrations" },
+        { label: "eHealth", href: "#integrations" },
+        { label: "BelRAI", href: "#integrations" },
+        { label: "itsme\u00ae", href: "#integrations" },
+      ],
+    },
+  ];
+
   return (
     <footer className="bg-white border-t border-gray-100" role="contentinfo">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -58,28 +51,30 @@ export default function Footer() {
               </span>
             </a>
             <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
-              Next-generation integrated healthcare management for Belgian care
-              organizations.
+              {t("description")}
             </p>
           </div>
 
           {/* Link columns */}
           {columns.map((column) => (
-            <div key={column.title}>
+            <div key={column.titleKey}>
               <h3 className="text-xs font-medium text-gray-400 uppercase tracking-wider mb-4">
-                {column.title}
+                {t(column.titleKey)}
               </h3>
               <ul className="space-y-2.5">
-                {column.links.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-gray-500 hover:text-black transition-colors"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
+                {column.links.map((link) => {
+                  const label = "labelKey" in link ? t(link.labelKey) : link.label;
+                  return (
+                    <li key={label}>
+                      <a
+                        href={link.href}
+                        className="text-sm text-gray-500 hover:text-black transition-colors"
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -88,12 +83,11 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-14 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Stegocare by LVDM Consultancy.
-            All rights reserved.
+            {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-sm text-gray-400 hover:text-black transition-colors">Privacy Policy</a>
-            <a href="#" className="text-sm text-gray-400 hover:text-black transition-colors">Terms of Service</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-black transition-colors">{t("privacyPolicy")}</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-black transition-colors">{t("termsOfService")}</a>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import AnimatedSection from "./AnimatedSection";
+import { useTranslations } from "next-intl";
 
 interface IntegrationPartner {
   name: string;
@@ -31,15 +32,17 @@ const partners: IntegrationPartner[] = [
 ];
 
 export default function IntegrationLogos() {
+  const t = useTranslations("integrationLogos");
+
   return (
     <section id="integrations" className="py-16 lg:py-24 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-12">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-widest mb-4">
-            Trusted Integrations
+            {t("sectionLabel")}
           </p>
           <h2 className="font-serif text-3xl lg:text-5xl font-bold text-black leading-tight">
-            Seamlessly connected to the platforms you rely on
+            {t("heading")}
           </h2>
         </AnimatedSection>
 

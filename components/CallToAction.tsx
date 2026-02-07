@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type SubmitStatus = "idle" | "loading" | "success" | "error";
 
@@ -10,6 +11,7 @@ export default function CallToAction() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<SubmitStatus>("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const t = useTranslations("callToAction");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -58,14 +60,11 @@ export default function CallToAction() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-serif text-3xl lg:text-5xl font-bold text-black leading-tight mb-6">
-            Stop patching systems.
-            <br />
-            Start delivering care.
+          <h2 className="font-serif text-3xl lg:text-5xl font-bold text-black leading-tight mb-6 whitespace-pre-line">
+            {t("heading")}
           </h2>
           <p className="text-lg text-black/50 mb-10 max-w-xl mx-auto leading-relaxed">
-            You can&apos;t build tomorrow&apos;s care organization with
-            yesterday&apos;s tools.
+            {t("subtitle")}
           </p>
 
           {/* Email signup form */}
@@ -80,7 +79,7 @@ export default function CallToAction() {
                 setEmail(e.target.value);
                 if (status === "error") setStatus("idle");
               }}
-              placeholder="Enter your email for updates"
+              placeholder={t("emailPlaceholder")}
               required
               disabled={status === "loading"}
               className="flex-1 px-4 py-3.5 bg-white/80 border border-black/10 text-sm text-black placeholder:text-black/40 focus:outline-none focus:border-black/30 focus:bg-white transition-colors disabled:opacity-60"
@@ -94,14 +93,14 @@ export default function CallToAction() {
                 <Loader2 className="w-4 h-4 animate-spin" />
               )}
               {status === "success" && <Check className="w-4 h-4" />}
-              {status === "success" ? "Subscribed" : "Stay updated"}
+              {status === "success" ? t("subscribed") : t("stayUpdated")}
             </button>
           </form>
 
           {/* Status messages */}
           {status === "success" && (
             <p className="text-sm text-black/60 mb-8">
-              Thanks! We&apos;ll keep you in the loop.
+              {t("thankYou")}
             </p>
           )}
           {status === "error" && (
@@ -112,7 +111,7 @@ export default function CallToAction() {
           <div className="flex items-center gap-4 max-w-md mx-auto mb-6">
             <div className="flex-1 h-px bg-black/10" />
             <span className="text-xs text-black/40 uppercase tracking-wider">
-              or
+              {t("or")}
             </span>
             <div className="flex-1 h-px bg-black/10" />
           </div>
@@ -124,7 +123,7 @@ export default function CallToAction() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-black/20 bg-white/60 text-black font-medium text-sm hover:bg-white/80 transition-colors"
           >
-            Book a demo
+            {t("bookDemo")}
             <ArrowRight className="w-4 h-4" />
           </a>
         </motion.div>

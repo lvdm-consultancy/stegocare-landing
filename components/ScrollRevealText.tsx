@@ -2,22 +2,9 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-interface TextBlock {
-  text: string;
-}
-
-const textBlocks: TextBlock[] = [
-  {
-    text: "Your care management was built to store data. Not understand it.",
-  },
-  {
-    text: "And every system you add hides one more piece of the picture. Schedules. Billing. Compliance. HR.",
-  },
-  {
-    text: "The context you need to deliver quality care never reaches the people who need it most.",
-  },
-];
+const blockKeys = ["block1", "block2", "block3"] as const;
 
 function RevealBlock({ text, index }: { text: string; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -44,12 +31,14 @@ function RevealBlock({ text, index }: { text: string; index: number }) {
 }
 
 export default function ScrollRevealText() {
+  const t = useTranslations("scrollRevealText");
+
   return (
     <section className="py-28 lg:py-40 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-10">
-          {textBlocks.map((block, index) => (
-            <RevealBlock key={index} text={block.text} index={index} />
+          {blockKeys.map((key, index) => (
+            <RevealBlock key={key} text={t(key)} index={index} />
           ))}
         </div>
       </div>
