@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
 export const metadata: Metadata = {
-  title: "Stegocare — Reliable Care, Simplified",
+  title: "Stegocare",
   description:
     "One platform to manage your planning, HR, billing, and administration. Built for modern Belgian care teams.",
   keywords: [
@@ -17,20 +17,60 @@ export const metadata: Metadata = {
     "BelRAI",
     "VESTA",
     "care organizations",
+    "thuiszorg",
+    "zorgmanagement",
+    "planning software",
+    "healthcare software Belgium",
+    "eHealth integration",
+    "care worker scheduling",
   ],
+  authors: [{ name: "LVDM Consultancy" }],
+  creator: "LVDM Consultancy",
+  publisher: "Stegocare",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://stegocare.be"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-BE": "/en",
+      "nl-BE": "/nl",
+      "fr-BE": "/fr",
+    },
+  },
   openGraph: {
-    title: "Stegocare — Reliable Care, Simplified",
+    title: "Stegocare",
     description:
       "One platform to manage your planning, HR, billing, and administration. Built for modern Belgian care teams.",
     type: "website",
     locale: "en_BE",
     siteName: "Stegocare",
+    url: "https://stegocare.be",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stegocare — Reliable Care, Simplified",
+    title: "Stegocare",
     description:
       "One platform to manage your planning, HR, billing, and administration. Built for modern Belgian care teams.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    // Add your verification codes here when available
+    // google: "your-google-verification-code",
+    // yandex: "your-yandex-verification-code",
   },
 };
 

@@ -22,7 +22,7 @@ export default function Hero() {
   const currentWordKey = rotatingWordKeys[wordIndex];
 
   return (
-    <section className="relative pt-40 pb-16 lg:pt-48 lg:pb-20 bg-gradient-to-b from-white via-white to-gray-100 overflow-hidden">
+    <section className="relative pt-40 pb-16 lg:pt-48 lg:pb-20 bg-white overflow-hidden">
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
         <motion.div
@@ -126,7 +126,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
-              className="absolute -right-4 sm:right-2 lg:right-8 -bottom-8 lg:-bottom-12 z-20 w-[140px] sm:w-[155px] lg:w-[195px]"
+              className="absolute -right-4 sm:right-2 lg:right-8 -bottom-8 lg:-bottom-12 z-20 w-[140px] sm:w-[155px] lg:w-[195px] scale-50 sm:scale-[0.65] lg:scale-100"
             >
               {/* Phone outer frame */}
               <div className="bg-[#1a1a1a] rounded-[2.2rem] lg:rounded-[2.8rem] p-[5px] lg:p-[7px] shadow-[0_25px_60px_-10px_rgba(0,0,0,0.35)]">
