@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`transition-all duration-300 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-sm shadow-[0_1px_3px_rgba(0,0,0,0.08)]"
           : "bg-white"
@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2" aria-label="Stegocare home">
-            <StegocareLogo size={32} className="text-black" colorful />
+            <StegocareLogo size={32} className="text-black" />
             <span className="text-lg font-semibold tracking-tight text-black">
               Stegocare
             </span>
@@ -69,7 +69,9 @@ export default function Navbar() {
               Sign in
             </a>
             <a
-              href="#contact"
+              href="https://calendly.com/simon-lvdmconsultancy/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden md:inline-flex items-center px-4 py-2 bg-black text-white text-sm font-medium hover:bg-primary-light transition-colors"
             >
               Book a demo
@@ -120,7 +122,9 @@ export default function Navbar() {
                   Sign in
                 </a>
                 <a
-                  href="#contact"
+                  href="https://calendly.com/simon-lvdmconsultancy/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block text-center bg-black text-white font-medium py-2.5"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

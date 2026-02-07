@@ -26,7 +26,7 @@ const columns: FooterColumn[] = [
     title: "Product",
     links: [
       { label: "Planning", href: "#features" },
-      { label: "Digital Intake", href: "#features" },
+      { label: "CRM", href: "#features" },
       { label: "Billing", href: "#features" },
       { label: "HR & Payroll", href: "#features" },
       { label: "Mobile App", href: "#features" },
@@ -35,7 +35,7 @@ const columns: FooterColumn[] = [
   {
     title: "Integrations",
     links: [
-      { label: "Vlaamse Overheid", href: "#integrations" },
+      { label: "Vesta", href: "#integrations" },
       { label: "Liantis", href: "#integrations" },
       { label: "eHealth", href: "#integrations" },
       { label: "BelRAI", href: "#integrations" },
@@ -52,7 +52,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <a href="#" className="flex items-center gap-2 mb-5">
-              <StegocareLogo size={28} className="text-black" colorful />
+              <StegocareLogo size={28} className="text-black" />
               <span className="text-lg font-semibold tracking-tight text-black">
                 Stegocare
               </span>
