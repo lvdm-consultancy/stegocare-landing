@@ -15,7 +15,7 @@
     "closeMenu": "Fermer le menu"
   },
   "hero": {
-    "badge": "Plateforme de Gestion des Soins",
+    "badge": "Conçu pour les soins 🇧🇪 belges",
     "headlineStart": "Des soins fiables,",
     "rotatingWords": {
       "simplified": "simplifi\u00e9s.",
@@ -47,7 +47,7 @@
       "billing": {
         "label": "Facturation",
         "headline": "Facturation automatis\u00e9e sans erreurs",
-        "description": "G\u00e9rez les changements de tarifs en cours de mois, les calculs de temps de d\u00e9placement et les normes de facturation 🇧🇪 belges automatiquement. Conformit\u00e9 r\u00e9glementaire int\u00e9gr\u00e9e."
+        "description": "G\u00e9rez les changements de tarifs en cours de mois, les calculs de temps de d\u00e9placement et les normes de facturation  belges automatiquement. Conformit\u00e9 r\u00e9glementaire int\u00e9gr\u00e9e."
       },
       "hr": {
         "label": "RH & Paie",
@@ -63,7 +63,8 @@
   },
   "integrationLogos": {
     "sectionLabel": "Int\u00e9grations de Confiance",
-    "heading": "Connect\u00e9 de mani\u00e8re transparente aux plateformes sur lesquelles vous comptez"
+    "heading": "Connect\u00e9 de mani\u00e8re transparente aux plateformes sur lesquelles vous comptez",
+    "addMore": "Et plus"
   },
   "scrollRevealText": {
     "block1": "Votre \u00e9quipe n'a pas choisi le secteur des soins pour passer la moiti\u00e9 de sa journ\u00e9e sur de l'administratif.",
@@ -73,7 +74,7 @@
   "solutions": {
     "sectionLabel": "La Solution",
     "heading": "Une plateforme pour toutes les remplacer",
-    "subtitle": "Stegocare r\u00e9unit planning, admission, facturation, RH et conformit\u00e9 dans un seul syst\u00e8me con\u00e7u pour les organisations de soins 🇧🇪 belges.",
+    "subtitle": "Stegocare r\u00e9unit planning, admission, facturation, RH et conformit\u00e9 dans un seul syst\u00e8me con\u00e7u pour les organisations de soins  belges.",
     "items": {
       "planning": {
         "title": "Planning en Temps R\u00e9el",
@@ -81,11 +82,11 @@
       },
       "intake": {
         "title": "Admission Num\u00e9rique & QES",
-        "description": "Signatures juridiquement contraignantes via itsme\u00ae et eID 🇧🇪 belge. Enti\u00e8rement num\u00e9rique, enti\u00e8rement auditable."
+        "description": "Signatures juridiquement contraignantes via itsme\u00ae et eID  belge. Enti\u00e8rement num\u00e9rique, enti\u00e8rement auditable."
       },
       "billing": {
         "title": "Facturation Automatis\u00e9e",
-        "description": "Changements de tarifs en cours de mois, temps de trajet et facturation sant\u00e9 🇧🇪 belge \u2014 tout g\u00e9r\u00e9 automatiquement."
+        "description": "Changements de tarifs en cours de mois, temps de trajet et facturation sant\u00e9  belge \u2014 tout g\u00e9r\u00e9 automatiquement."
       },
       "hr": {
         "title": "Sync RH & Paie",
@@ -143,7 +144,7 @@
     "bookDemo": "R\u00e9server une d\u00e9mo"
   },
   "footer": {
-    "description": "Gestion int\u00e9gr\u00e9e de nouvelle g\u00e9n\u00e9ration pour les organisations de soins 🇧🇪 belges.",
+    "description": "Gestion int\u00e9gr\u00e9e de nouvelle g\u00e9n\u00e9ration pour les organisations de soins  belges.",
     "navigation": "Navigation",
     "home": "Accueil",
     "features": "Fonctionnalit\u00e9s",

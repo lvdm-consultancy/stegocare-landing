@@ -15,7 +15,7 @@
     "closeMenu": "Close menu"
   },
   "hero": {
-    "badge": "Healthcare Management Platform",
+    "badge": "Built for 🇧🇪 Belgian Care",
     "headlineStart": "Reliable care,",
     "rotatingWords": {
       "simplified": "simplified.",
@@ -47,7 +47,7 @@
       "billing": {
         "label": "Billing",
         "headline": "Automated billing with zero manual errors",
-        "description": "Handle mid-month rate changes, travel time calculations, and 🇧🇪 Belgian healthcare billing standards automatically. Full regulatory compliance built in."
+        "description": "Handle mid-month rate changes, travel time calculations, and Belgian healthcare billing standards automatically. Full regulatory compliance built in."
       },
       "hr": {
         "label": "HR & Payroll",
@@ -63,7 +63,8 @@
   },
   "integrationLogos": {
     "sectionLabel": "Trusted Integrations",
-    "heading": "Seamlessly connected to the platforms you rely on"
+    "heading": "Seamlessly connected to the platforms you rely on",
+    "addMore": "And more"
   },
   "scrollRevealText": {
     "block1": "Your team didn't choose care work to spend half their day on admin.",
@@ -73,7 +74,7 @@
   "solutions": {
     "sectionLabel": "The Solution",
     "heading": "One platform to replace them all",
-    "subtitle": "Stegocare brings planning, intake, billing, HR, and compliance into a single system built for 🇧🇪 Belgian care organizations.",
+    "subtitle": "Stegocare brings planning, intake, billing, HR, and compliance into a single system built for  Belgian care organizations.",
     "items": {
       "planning": {
         "title": "Real-Time Planning",
@@ -81,11 +82,11 @@
       },
       "intake": {
         "title": "Digital Intake & QES",
-        "description": "Legally binding signatures via itsme\u00ae and 🇧🇪 Belgian eID. Fully digital, fully auditable."
+        "description": "Legally binding signatures via itsme\u00ae and  Belgian eID. Fully digital, fully auditable."
       },
       "billing": {
         "title": "Automated Billing",
-        "description": "Mid-month rate changes, travel time, and 🇧🇪 Belgian healthcare billing \u2014 all handled automatically."
+        "description": "Mid-month rate changes, travel time, and  Belgian healthcare billing \u2014 all handled automatically."
       },
       "hr": {
         "title": "HR & Payroll Sync",
@@ -143,7 +144,7 @@
     "bookDemo": "Book a demo"
   },
   "footer": {
-    "description": "Next-generation integrated healthcare management for 🇧🇪 Belgian care organizations.",
+    "description": "Next-generation integrated healthcare management for  Belgian care organizations.",
     "navigation": "Navigation",
     "home": "Home",
     "features": "Features",

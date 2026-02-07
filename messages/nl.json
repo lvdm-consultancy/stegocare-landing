@@ -15,7 +15,7 @@
     "closeMenu": "Menu sluiten"
   },
   "hero": {
-    "badge": "Zorgmanagement Platform",
+    "badge": "Gebouwd voor 🇧🇪 Belgische zorg",
     "headlineStart": "Betrouwbare zorg,",
     "rotatingWords": {
       "simplified": "vereenvoudigd.",
@@ -47,7 +47,7 @@
       "billing": {
         "label": "Facturatie",
         "headline": "Geautomatiseerde facturatie zonder fouten",
-        "description": "Verwerk tariefwijzigingen halverwege de maand, reistijdberekeningen en 🇧🇪 Belgische zorgnormen automatisch. Volledige regelgevingsconformiteit ingebouwd."
+        "description": "Verwerk tariefwijzigingen halverwege de maand, reistijdberekeningen en  Belgische zorgnormen automatisch. Volledige regelgevingsconformiteit ingebouwd."
       },
       "hr": {
         "label": "HR & Payroll",
@@ -63,7 +63,8 @@
   },
   "integrationLogos": {
     "sectionLabel": "Vertrouwde Integraties",
-    "heading": "Naadloos verbonden met de platformen waarop u vertrouwt"
+    "heading": "Naadloos verbonden met de platformen waarop u vertrouwt",
+    "addMore": "En meer"
   },
   "scrollRevealText": {
     "block1": "Uw team koos niet voor de zorg om de helft van hun dag aan administratie te besteden.",
@@ -73,7 +74,7 @@
   "solutions": {
     "sectionLabel": "De Oplossing",
     "heading": "E\u00e9n platform om ze allemaal te vervangen",
-    "subtitle": "Stegocare brengt planning, intake, facturatie, HR en compliance samen in \u00e9\u00e9n systeem gebouwd voor 🇧🇪 Belgische zorgorganisaties.",
+    "subtitle": "Stegocare brengt planning, intake, facturatie, HR en compliance samen in \u00e9\u00e9n systeem gebouwd voor  Belgische zorgorganisaties.",
     "items": {
       "planning": {
         "title": "Realtime Planning",
@@ -81,11 +82,11 @@
       },
       "intake": {
         "title": "Digitale Intake & QES",
-        "description": "Juridisch bindende handtekeningen via itsme\u00ae en 🇧🇪 Belgische eID. Volledig digitaal, volledig auditeerbaar."
+        "description": "Juridisch bindende handtekeningen via itsme\u00ae en  Belgische eID. Volledig digitaal, volledig auditeerbaar."
       },
       "billing": {
         "title": "Geautomatiseerde Facturatie",
-        "description": "Tariefwijzigingen halverwege de maand, reistijd en 🇧🇪 Belgische zorgfacturatie \u2014 allemaal automatisch afgehandeld."
+        "description": "Tariefwijzigingen halverwege de maand, reistijd en  Belgische zorgfacturatie \u2014 allemaal automatisch afgehandeld."
       },
       "hr": {
         "title": "HR & Payroll Sync",
@@ -143,7 +144,7 @@
     "bookDemo": "Boek een demo"
   },
   "footer": {
-    "description": "Ge\u00efntegreerd zorgbeheer van de volgende generatie voor 🇧🇪 Belgische zorgorganisaties.",
+    "description": "Ge\u00efntegreerd zorgbeheer van de volgende generatie voor  Belgische zorgorganisaties.",
     "navigation": "Navigatie",
     "home": "Home",
     "features": "Functies",
