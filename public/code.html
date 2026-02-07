@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Careville Dashboard</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1754cf",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1e2433",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-display overflow-x-hidden">
+<!-- Header Section -->
+<header class="px-5 pt-8 pb-4 flex items-center justify-between sticky top-0 z-10 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+<div class="flex items-center gap-3">
+<div class="relative">
+<div class="size-10 rounded-full bg-cover bg-center border-2 border-white dark:border-slate-700 shadow-sm" data-alt="Portrait of a female care worker smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVdXXNyyHarbHczUteecpeck1hCcl9xjHyfZwGQQWRGtA8h2vLaz5CpnodUfVMcuB3XIzm7LmFk5blVzjoXLYtyeljKZty2b2BmsHJjHNNp5HjKBnjJg1nlVfehpRnyeT333RvxR4P69xWjBoJY6Xrpsujw1xACTAT5T2xUv-jaTPpWHYXD52oMVbTJAThuzDz_neYm3jz08Qcwc8To0NIFD0A95Olw7LqXk4Exy4R1Jku5-8vvVaoWN3hP3GNmqXk-ynUTjLt_Is');"></div>
+<div class="absolute bottom-0 right-0 size-3 bg-green-500 rounded-full border-2 border-white dark:border-slate-800"></div>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Maandag, 12 Juni</span>
+<h1 class="text-xl font-bold text-slate-900 dark:text-white leading-none">Dag Sarah,</h1>
+</div>
+</div>
+<button class="relative p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-200">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-red-500 rounded-full"></span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-5 pb-24 flex flex-col gap-6">
+<!-- Next Appointment Card -->
+<section>
+<div class="flex items-center justify-between mb-3">
+<h2 class="text-lg font-bold text-slate-800 dark:text-slate-100">Volgende Afspraak</h2>
+<span class="text-sm font-medium text-primary bg-primary/10 px-2 py-1 rounded-md">Nu Bezig</span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-2xl p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] border border-slate-100 dark:border-slate-800 relative overflow-hidden group">
+<!-- Decorative background accent -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 dark:bg-blue-900/20 rounded-bl-full -mr-10 -mt-10 z-0"></div>
+<div class="relative z-10 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="flex gap-4">
+<div class="size-14 rounded-xl bg-slate-100 dark:bg-slate-700 overflow-hidden flex-shrink-0">
+<img alt="Profile photo of an elderly woman client" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo2tAGD7zq2QHK7ojQpjeHZMgbtU94uznK-d2wq2fhJdiZOxD9mS6GNzjbDGHGfJpf8tp6-ys0LUziZJuGCfJxPnxk96Ap1a6e-0TN8SVmjZ6yPbEpzMxbafy8IBy4VgG1KylA2KdCjRtJ1qji6dhR129vTTJqJQXI7YSrItkwfUiqIrC6lDjQHER4VjrKrfiUqHCiG2QDAHN7OzsKTHB8s_0tR6mJKdtGKMhuXl5fHVO_sXb4uan2veqDIMRzpIQF1rZjfm7rLVw"/>
+</div>
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white leading-tight">Mvr. Jansen</h3>
+<div class="flex items-center gap-1 mt-1 text-slate-500 dark:text-slate-400 text-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span>09:00 - 10:30</span>
+</div>
+</div>
+</div>
+<div class="bg-blue-100 dark:bg-blue-900/40 text-primary rounded-lg p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+</div>
+<div class="flex items-start gap-2 bg-slate-50 dark:bg-slate-800/50 p-3 rounded-lg border border-slate-100 dark:border-slate-700/50">
+<span class="material-symbols-outlined text-red-500 mt-0.5 text-[20px]">location_on</span>
+<div class="flex flex-col">
+<span class="text-sm font-semibold text-slate-800 dark:text-slate-200">Kerkstraat 12</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">3000 Leuven • 2.4 km</span>
+</div>
+</div>
+<button class="w-full h-12 mt-2 bg-primary hover:bg-blue-700 active:scale-[0.98] transition-all rounded-xl text-white font-bold text-base shadow-lg shadow-blue-500/30 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+                        Start Interventie
+                    </button>
+</div>
+</div>
+</section>
+<!-- Quick Actions Grid -->
+<section>
+<h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 mb-3 px-1">Snelmenu</h3>
+<div class="grid grid-cols-2 gap-4">
+<!-- Planning -->
+<button class="flex flex-col items-center justify-center gap-3 p-5 rounded-2xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary/50 transition-colors relative group">
+<div class="absolute top-3 right-3 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+</div>
+<div class="p-3 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">calendar_month</span>
+</div>
+<span class="font-bold text-slate-700 dark:text-slate-200">Planning</span>
+</button>
+<!-- Verlof -->
+<button class="flex flex-col items-center justify-center gap-3 p-5 rounded-2xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary/50 transition-colors group">
+<div class="p-3 rounded-full bg-orange-50 dark:bg-orange-900/30 text-orange-600 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">beach_access</span>
+</div>
+<span class="font-bold text-slate-700 dark:text-slate-200">Verlof</span>
+</button>
+<!-- Ziekte -->
+<button class="flex flex-col items-center justify-center gap-3 p-5 rounded-2xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary/50 transition-colors group">
+<div class="p-3 rounded-full bg-teal-50 dark:bg-teal-900/30 text-teal-600 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">medical_services</span>
+</div>
+<span class="font-bold text-slate-700 dark:text-slate-200">Ziekte</span>
+</button>
+<!-- Incidenten -->
+<button class="flex flex-col items-center justify-center gap-3 p-5 rounded-2xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary/50 transition-colors group">
+<div class="p-3 rounded-full bg-purple-50 dark:bg-purple-900/30 text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">report_problem</span>
+</div>
+<span class="font-bold text-slate-700 dark:text-slate-200">Incidenten</span>
+</button>
+</div>
+</section>
+<!-- SOS Button -->
+<button class="mt-4 w-full bg-red-50 dark:bg-red-900/20 border-2 border-red-100 dark:border-red-900/50 hover:bg-red-100 dark:hover:bg-red-900/30 text-red-600 dark:text-red-400 font-bold py-4 px-6 rounded-2xl flex items-center justify-center gap-3 transition-colors">
+<span class="material-symbols-outlined text-[28px]">sos</span>
+<span class="text-lg">NOODGEVAL / HELP</span>
+</button>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 w-full bg-surface-light dark:bg-surface-dark border-t border-slate-200 dark:border-slate-800 pb-safe pt-2 px-6 z-50 shadow-[0_-4px_20px_-4px_rgba(0,0,0,0.05)]">
+<div class="flex justify-between items-center h-16 max-w-md mx-auto">
+<a class="flex flex-col items-center justify-center w-16 gap-1 text-primary" href="#">
+<span class="material-symbols-outlined icon-filled text-[26px]">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 gap-1 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" href="#">
+<div class="relative">
+<span class="material-symbols-outlined text-[26px]">chat_bubble</span>
+<span class="absolute -top-1 -right-1 size-2.5 bg-primary rounded-full border-2 border-surface-light dark:border-surface-dark"></span>
+</div>
+<span class="text-[10px] font-medium">Berichten</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 gap-1 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" href="#">
+<span class="material-symbols-outlined text-[26px]">person</span>
+<span class="text-[10px] font-medium">Profiel</span>
+</a>
+</div>
+<!-- Safe area spacer for modern phones -->
+<div class="h-5 w-full"></div>
+</nav>
+</body></html>

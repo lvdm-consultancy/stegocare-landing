@@ -9,24 +9,24 @@ interface IntegrationPartner {
 
 const partners: IntegrationPartner[] = [
   {
-    name: "Vlaamse Overheid",
-    logo: "/logos/vlaamse-overheid.svg",
+    name: "VESTA  ",
+    logo: "/logos/vlaamse_overheid.jpg",
   },
   {
     name: "Liantis",
-    logo: "/logos/liantis.svg",
+    logo: "/logos/liantis.webp",
   },
   {
     name: "eHealth",
-    logo: "/logos/ehealth.svg",
+    logo: "/logos/ehealth.png",
   },
   {
     name: "BelRAI",
-    logo: "/logos/belrai.svg",
+    logo: "/logos/belrai.png",
   },
   {
     name: "itsme",
-    logo: "/logos/itsme.svg",
+    logo: "/logos/itsme.webp",
   },
 ];
 
