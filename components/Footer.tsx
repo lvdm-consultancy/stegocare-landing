@@ -12,8 +12,8 @@ export default function Footer() {
         { labelKey: "home", href: "#" },
         { labelKey: "features", href: "#features" },
         { labelKey: "security", href: "#security" },
-        { labelKey: "contact", href: "#contact" },
-      ],
+        { labelKey: "contact", href: "#contact" }
+      ]
     },
     {
       titleKey: "product",
@@ -22,8 +22,8 @@ export default function Footer() {
         { labelKey: "crm", href: "#features" },
         { labelKey: "billing", href: "#features" },
         { labelKey: "hrPayroll", href: "#features" },
-        { labelKey: "mobileApp", href: "#features" },
-      ],
+        { labelKey: "mobileApp", href: "#features" }
+      ]
     },
     {
       titleKey: "integrations",
@@ -32,9 +32,9 @@ export default function Footer() {
         { label: "Liantis", href: "#integrations" },
         { label: "eHealth", href: "#integrations" },
         { label: "BelRAI", href: "#integrations" },
-        { label: "itsme\u00ae", href: "#integrations" },
-      ],
-    },
+        { label: "itsme\u00ae", href: "#integrations" }
+      ]
+    }
   ];
 
   return (
@@ -45,7 +45,11 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <a href="#" className="flex items-center gap-2 mb-5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logos/careville-logo-temp.png" alt="Stegocare logo" className="w-7 h-7 rounded" />
+              <img
+                src="/logos/careville-logo-temp.png"
+                alt="Stegocare logo"
+                className="w-7 h-7 rounded"
+              />
               <span className="text-lg font-semibold tracking-tight text-black">
                 Stegocare
               </span>
@@ -63,7 +67,8 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2.5">
                 {column.links.map((link) => {
-                  const label = "labelKey" in link ? t(link.labelKey) : link.label;
+                  const label =
+                    "labelKey" in link ? t(link.labelKey) : link.label;
                   return (
                     <li key={label}>
                       <a
@@ -86,8 +91,19 @@ export default function Footer() {
             {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex items-center gap-6">
-            <a href="/privacy" className="text-sm text-gray-400 hover:text-black transition-colors">{t("privacyPolicy")}</a>
-            <a href="/terms" className="text-sm text-gray-400 hover:text-black transition-colors">{t("termsOfService")}</a>
+            <a
+              href="/privacy"
+              className="text-sm text-gray-400 hover:text-black transition-colors"
+            >
+              {t("privacyPolicy")}
+            </a>
+            <a
+              href="/terms"
+              className="text-sm text-gray-400 hover:text-black transition-colors"
+            >
+              {t("termsOfService")}
+            </a>
+            <div className="hidden">v0.1</div>
           </div>
         </div>
       </div>
