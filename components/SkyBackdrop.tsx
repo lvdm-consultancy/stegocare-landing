@@ -1,6 +1,8 @@
 interface SkyBackdropProps {
   /** Optional painted background image (e.g. a Figma export in /public/backgrounds/). */
   image?: string | null;
+  /** Optional WebP srcset served alongside the image for lighter delivery. */
+  webpSrcSet?: string;
   /** Fade in from white at the top, for mid-page sections. */
   fadeTop?: boolean;
   /** Extra classes for the image (e.g. object-position tweaks per section). */
@@ -14,20 +16,26 @@ interface SkyBackdropProps {
  */
 export default function SkyBackdrop({
   image,
+  webpSrcSet,
   fadeTop = false,
   imageClassName = "",
 }: SkyBackdropProps) {
   return (
     <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
       {image ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={image}
-          alt=""
-          loading="eager"
-          fetchPriority="high"
-          className={`absolute inset-0 h-full w-full object-cover ${imageClassName}`}
-        />
+        <picture>
+          {webpSrcSet && (
+            <source type="image/webp" srcSet={webpSrcSet} sizes="100vw" />
+          )}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={image}
+            alt=""
+            loading="eager"
+            fetchPriority="high"
+            className={`absolute inset-0 h-full w-full object-cover ${imageClassName}`}
+          />
+        </picture>
       ) : (
         <>
           {/* Sky */}

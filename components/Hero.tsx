@@ -38,7 +38,14 @@ export default function Hero() {
 
   return (
     <header className="relative flex min-h-[100svh] flex-col overflow-hidden">
-      <SkyBackdrop image={heroImage} />
+      <SkyBackdrop
+        image={heroImage}
+        webpSrcSet={
+          heroImage === "/backgrounds/hero.jpg"
+            ? "/backgrounds/hero-828.webp 828w, /backgrounds/hero-1280.webp 1280w, /backgrounds/hero-2200.webp 2200w"
+            : undefined
+        }
+      />
       {onImage && (
         /* Soft vignette behind the copy so white text reads on any backdrop */
         <div

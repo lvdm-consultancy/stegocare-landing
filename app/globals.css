@@ -32,7 +32,9 @@ body {
 
 @keyframes rise {
   from {
-    opacity: 0;
+    /* 0.02 instead of 0: Chrome ignores elements first painted at opacity 0
+       for LCP, which made the hero headline invisible to the metric. */
+    opacity: 0.02;
     transform: translateY(18px);
   }
   to {

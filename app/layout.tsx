@@ -7,10 +7,12 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+// Only the italic cuts actually used (hero accent word, builders ×).
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500"],
+  style: ["italic"],
 });
 
 const JSONLD_DESCRIPTION: Record<string, string> = {
