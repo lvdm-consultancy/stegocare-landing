@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/"],
     },
-    sitemap: "https://stegocare.be/sitemap.xml",
+    sitemap: "https://www.stego.care/sitemap.xml",
   };
 }

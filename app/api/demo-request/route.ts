@@ -78,7 +78,7 @@ async function sendNotificationEmail(fields: DemoRequestBody): Promise<void> {
       reply_to: fields.email,
       subject: `Demo-aanvraag: ${fields.organisation} (${fields.firstName} ${fields.lastName})`,
       html: `
-        <h2>Nieuwe demo-aanvraag via stegocare.be</h2>
+        <h2>Nieuwe demo-aanvraag via stego.care</h2>
         <table cellpadding="4">
           <tr><td><strong>Naam</strong></td><td>${escape(fields.firstName)} ${escape(fields.lastName)}</td></tr>
           <tr><td><strong>E-mail</strong></td><td>${escape(fields.email)}</td></tr>

@@ -6,7 +6,7 @@ import {
 } from "@/components/feature-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://stegocare.be";
+  const baseUrl = "https://www.stego.care";
   const locales: Locale[] = ["en", "nl", "fr"];
   const routes = ["", "/demo", "/contact", "/terms", "/privacy"];
 

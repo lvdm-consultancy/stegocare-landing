@@ -43,8 +43,8 @@ export default async function RootLayout({
                 "@type": "Organization",
                 name: "Stegocare",
                 description,
-                url: "https://stegocare.be",
-                logo: "https://stegocare.be/logos/careville-logo-temp.png",
+                url: "https://www.stego.care",
+                logo: "https://www.stego.care/logos/careville-logo-temp.png",
                 founder: [
                   {
                     "@type": "Organization",
@@ -67,7 +67,7 @@ export default async function RootLayout({
                 "@type": "SoftwareApplication",
                 name: "Stegocare",
                 description,
-                url: "https://stegocare.be",
+                url: "https://www.stego.care",
                 applicationCategory: "HealthApplication",
                 operatingSystem: "Web, iOS, Android",
                 inLanguage: ["nl", "fr", "en"],
