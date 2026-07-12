@@ -29,14 +29,14 @@ export async function generateMetadata({
       address: false,
       telephone: false,
     },
-    metadataBase: new URL("https://stegocare.be"),
+    metadataBase: new URL("https://www.stego.care"),
     openGraph: {
       title: t("title"),
       description: t("description"),
       type: "website",
       locale: OG_LOCALE[locale] ?? "nl_BE",
       siteName: "Stegocare",
-      url: `https://stegocare.be/${locale}`,
+      url: `https://www.stego.care/${locale}`,
     },
     twitter: {
       card: "summary_large_image",
