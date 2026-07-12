@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { DEMO_PATH } from "./links";
 
 interface NavLink {
   labelKey: string;
@@ -12,17 +13,22 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-  { labelKey: "features", href: "#features" },
-  { labelKey: "integrations", href: "#integrations" },
-  { labelKey: "security", href: "#security" },
-  { labelKey: "contact", href: "#contact" },
+  { labelKey: "features", href: "/#features" },
+  { labelKey: "security", href: "/#security" },
+  { labelKey: "contact", href: "/contact" },
 ];
 
-export default function Navbar() {
+interface NavbarProps {
+  /** White text while sitting on the hero image; turns solid on scroll. */
+  light?: boolean;
+}
+
+export default function Navbar({ light = false }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const t = useTranslations("navbar");
   const locale = useLocale();
+  const isLight = light && !isScrolled && !isMobileMenuOpen;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -32,66 +38,78 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-[0_1px_3px_rgba(0,0,0,0.08)]"
-          : "bg-white"
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        isScrolled || isMobileMenuOpen
+          ? "bg-white/85 backdrop-blur-md shadow-[0_1px_0_rgba(36,49,61,0.08)]"
+          : "bg-transparent"
       }`}
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a href={`/${locale}`} className="flex items-center gap-2" aria-label="Stegocare home">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          <a
+            href={`/${locale}`}
+            className="flex items-center gap-2.5"
+            aria-label="Stegocare home"
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logos/careville-logo-temp.png" alt="Stegocare logo" className="w-8 h-8 rounded" />
-            <span className="text-lg font-semibold tracking-tight text-black">
+            <img
+              src="/logos/careville-logo-temp.png"
+              alt="Stegocare logo"
+              className="h-8 w-8 rounded"
+            />
+            <span
+              className={`text-lg font-semibold tracking-tight ${
+                isLight ? "text-white" : "text-ink"
+              }`}
+            >
               Stegocare
             </span>
           </a>
 
-          {/* Desktop nav links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={`/${locale}${link.href}`}
-                className="text-sm text-gray-600 hover:text-black transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  isLight
+                    ? "text-white/85 hover:text-white"
+                    : "text-ink-soft hover:text-ink"
+                }`}
               >
                 {t(link.labelKey)}
               </a>
             ))}
           </div>
 
-          {/* CTA buttons */}
-          <div className="flex items-center gap-3">
-            <LanguageSwitcher />
+          <div className="flex items-center gap-2 sm:gap-4">
+            <LanguageSwitcher light={isLight} />
             <a
-              href="https://calendly.com/simon-lvdmconsultancy/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center px-4 py-2 bg-black text-white text-sm font-medium hover:bg-primary-light transition-colors"
+              href={`/${locale}${DEMO_PATH}`}
+              className={`hidden items-center rounded-full bg-neutral-900 px-4.5 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-neutral-700 md:inline-flex ${
+                isLight ? "ring-1 ring-white/40" : ""
+              }`}
             >
-              {t("bookDemo")}
+              {t("requestDemo")}
             </a>
             <button
-              className="md:hidden p-2"
+              className="p-2 md:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? t("closeMenu") : t("openMenu")}
               aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? (
-                <X className="w-5 h-5 text-black" />
+                <X className="h-5 w-5 text-ink" />
               ) : (
-                <Menu className="w-5 h-5 text-black" />
+                <Menu className={`h-5 w-5 ${isLight ? "text-white" : "text-ink"}`} />
               )}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -99,28 +117,26 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden bg-white border-t border-gray-100"
+            className="border-t border-ink/5 bg-white/95 backdrop-blur-md md:hidden"
           >
-            <div className="px-4 py-4 space-y-1">
+            <div className="space-y-1 px-4 py-4">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={`/${locale}${link.href}`}
-                  className="block text-gray-600 font-medium py-3 px-3 hover:bg-gray-50 transition-colors"
+                  className="block rounded-lg px-3 py-3 font-medium text-ink-soft transition-colors hover:bg-mist hover:text-ink"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {t(link.labelKey)}
                 </a>
               ))}
-              <div className="pt-3 space-y-2">
+              <div className="pt-3">
                 <a
-                  href="https://calendly.com/simon-lvdmconsultancy/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center bg-black text-white font-medium py-2.5"
+                  href={`/${locale}${DEMO_PATH}`}
+                  className="block rounded-full bg-neutral-900 py-2.5 text-center font-medium text-white"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {t("bookDemo")}
+                  {t("requestDemo")}
                 </a>
               </div>
             </div>

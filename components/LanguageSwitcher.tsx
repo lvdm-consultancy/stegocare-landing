@@ -7,16 +7,33 @@ import { routing } from "@/i18n/routing";
 
 interface LocaleOption {
   flag: string;
+  flagAlt: string;
   label: string;
 }
 
 const localeOptions: Record<string, LocaleOption> = {
-  en: { flag: "🇬🇧", label: "EN" },
-  fr: { flag: "🇫🇷", label: "FR" },
-  nl: { flag: "🇳🇱", label: "NL" },
+  en: { flag: "/flags/gb.png", flagAlt: "United Kingdom flag", label: "EN" },
+  fr: { flag: "/flags/fr.png", flagAlt: "France flag", label: "FR" },
+  nl: { flag: "/flags/nl.png", flagAlt: "Netherlands flag", label: "NL" },
 };
 
-export default function LanguageSwitcher() {
+function Flag({ option }: { option: LocaleOption }) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={option.flag}
+      alt={option.flagAlt}
+      className="h-3 w-[18px] rounded-[2px] object-cover ring-1 ring-black/10"
+    />
+  );
+}
+
+interface LanguageSwitcherProps {
+  /** White text while sitting on the hero image. */
+  light?: boolean;
+}
+
+export default function LanguageSwitcher({ light = false }: LanguageSwitcherProps) {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -47,10 +64,12 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 text-sm text-gray-600 hover:text-black transition-colors px-2 py-1"
+        className={`flex items-center gap-1 text-sm transition-colors px-2 py-1 ${
+          light ? "text-white/85 hover:text-white" : "text-gray-600 hover:text-black"
+        }`}
         aria-label="Switch language"
       >
-        <span className="leading-none">{localeOptions[locale].flag}</span>
+        <Flag option={localeOptions[locale]} />
         {localeOptions[locale].label}
         <svg
           className={`w-3 h-3 transition-transform ${isOpen ? "rotate-180" : ""}`}
@@ -75,7 +94,7 @@ export default function LanguageSwitcher() {
                   : "text-gray-600 hover:bg-gray-50 hover:text-black"
               }`}
             >
-              <span className="leading-none">{localeOptions[loc].flag}</span>
+              <Flag option={localeOptions[loc]} />
               {localeOptions[loc].label}
             </button>
           ))}

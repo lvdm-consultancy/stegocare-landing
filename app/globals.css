@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #000000;
-  --color-primary-light: #1a1a1a;
-  --color-accent: #14B8A6;
-  --color-accent-dark: #0D9488;
+  --color-brand: #3274b4;
+  --color-brand-deep: #275d92;
+  --color-brand-tint: #e9f1f8;
+  --color-ink: #24313d;
+  --color-ink-soft: #5c6c7a;
+  --color-navy: #16293c;
+  --color-mist: #f4f7f9;
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
 }
@@ -15,15 +18,40 @@ html {
 
 body {
   background: #ffffff;
-  color: #1a1a1a;
+  color: var(--color-ink);
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
+::selection {
+  background: #cfe0ef;
+  color: var(--color-ink);
+}
+
+@keyframes rise {
+  from {
+    /* 0.02 instead of 0: Chrome ignores elements first painted at opacity 0
+       for LCP, which made the hero headline invisible to the metric. */
+    opacity: 0.02;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .rise {
+    animation: none;
   }
 }

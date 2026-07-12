@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "headline": "Zorgplanning die eindelijk het tempo van de zorg volgt.",
+    "subheadline": "Stegocare brengt planning, cliëntdossiers, tijdsregistratie, kilometervergoeding en facturatie voor thuiszorgorganisaties samen in één platform. Met een mobiele app die de werkdag van elke zorgverlener in hun broekzak steekt. Minder administratie, minder fouten, meer tijd aan de zijde van de cliënt.",
+    "ctaPrimary": "Vraag een demo aan",
+    "ctaSecondary": "Aanmelden"
+  },
+  "socialProof": {
+    "tagline": "Gebouwd voor de Vlaamse gezins- en thuiszorg. Vesta-klaar vanaf dag één."
+  },
+  "features": {
+    "planning": {
+      "title": "Planning",
+      "tagline": "Terugkerende planningen zonder spreadsheet-acrobatie",
+      "description": "Eén keer plannen, eindeloos herhalen. De planningsmotor van Stegocare ondersteunt wekelijkse, tweewekelijkse en aangepaste terugkerende afspraken, met uitzonderingen wanneer het leven anders beslist: een geannuleerd bezoek, een vervangende zorgverlener, een verschoven tijdslot. Conflicten met overlappende afspraken of afwezigheden worden gesignaleerd vóór ze een probleem worden, niet erna.",
+      "bullets": [
+        "Terugkerende afspraken met uitzonderingen per voorkomen",
+        "Automatische conflictdetectie over medewerkers en cliënten heen",
+        "Dag-, week- en dienstweergaven waar je planners graag mee werken",
+        "Elke wijziging meteen zichtbaar in de mobiele app van de zorgverlener"
+      ]
+    },
+    "mobile": {
+      "title": "Mobiele app",
+      "tagline": "De volledige werkdag van de zorgverlener, in één app",
+      "description": "Zorgverleners openen de Stegocare-app en zien meteen waar ze wanneer verwacht worden. Ze starten en stoppen de tijdsregistratie aan de deur van de cliënt, registreren verplaatsingen, reistijd en onkosten ter plaatse, en vragen verlof aan zonder naar kantoor te bellen. Pushmeldingen houden iedereen mee: een verschoven afspraak, een goedgekeurde verlofaanvraag of een bericht van kantoor komt meteen op de smartphone van de zorgverlener terecht.",
+      "bullets": [
+        "Persoonlijke dag- en maandplanning, altijd actueel",
+        "Bezoekregistratie starten en stoppen op locatie",
+        "Verplaatsingen, reistijd en onkosten registreren op het moment zelf",
+        "Verlof aanvragen en de status opvolgen vanop je smartphone",
+        "Pushmeldingen bij planningswijzigingen en berichten van kantoor",
+        "Documenten opladen (foto of pdf) rechtstreeks vanop je smartphone",
+        "Ingebouwd telefoonboek en organisatienieuws",
+        "Beschikbaar op iOS en Android"
+      ]
+    },
+    "clients": {
+      "title": "Cliëntbeheer",
+      "tagline": "Het volledige cliëntdossier, één klik verwijderd",
+      "description": "Elke cliënt, elk dossier en elke zorghistoriek op één plek. Volg zorgstatus, schorsingen, tariefregelingen en de gezinssituatie op zonder te zoeken in mappen of verouderde systemen. Intake- en herzieningsflows begeleiden je medewerkers van het eerste telefoontje tot het afgewerkte dossier, huisbezoek inbegrepen.",
+      "bullets": [
+        "Volledige dossiers met status, tarieven en opvolging van schorsingen",
+        "Begeleide intake- en herzieningsflows met een volledige tijdlijn van gebeurtenissen",
+        "Contactnetwerk per cliënt: familie, artsen, andere zorgverleners",
+        "Documenten bewaard waar ze thuishoren, in het dossier"
+      ]
+    },
+    "documents": {
+      "title": "Documenten & formulieren",
+      "tagline": "Officiële papieren, gegenereerd in plaats van getypt",
+      "description": "Een intake- of herzieningshuisbezoek voorbereiden? Stegocare genereert de officiële formulieren, zoals de F51, als vooraf ingevulde pdf's op basis van de gegevens die al in het dossier zitten. Download ze voor het bezoek, pas waar nodig de invoer aan en laad de ondertekende versie meteen terug op in het dossier. Elk document opent in de ingebouwde viewer, zonder externe programma's.",
+      "bullets": [
+        "Automatische F51-generatie bij intake- en herzieningshuisbezoeken, vooraf ingevuld vanuit het dossier",
+        "Downloaden, invoer aanpassen en het ondertekende exemplaar opladen in één flow",
+        "Ingebouwde pdf- en documentviewer: bestanden openen rechtstreeks in de app",
+        "Factuur-pdf's gegenereerd op basis van de geregistreerde prestaties"
+      ]
+    },
+    "timeAndTravel": {
+      "title": "Tijd & verplaatsingen",
+      "tagline": "Elke minuut en elke kilometer verantwoord",
+      "description": "Zorgverleners registreren hun uren in de app terwijl ze werken. Reistijd en kilometers tussen bezoeken worden vastgelegd en vergoed volgens jouw regels, en een ingebouwde controleflow laat de backoffice prestaties nakijken, corrigeren en per periode vergrendelen. Eens een periode vergrendeld is, blijven de cijfers staan.",
+      "bullets": [
+        "Tijdsregistratie, nazicht en vergrendeling per periode",
+        "Opvolging van reistijd en kilometervergoeding",
+        "Onkostenregistratie met bewijsstukken, rechtstreeks vanop de smartphone van de zorgverlener"
+      ]
+    },
+    "vesta": {
+      "title": "Vesta & rapportering",
+      "tagline": "Conformiteit zonder knip- en plakwerk",
+      "description": "Stegocare spreekt Vesta. Prestatiegegevens stromen zonder overtypen door naar het registratiesysteem van de Vlaamse overheid, en reconciliatierapporten tonen je exact wat werd ingediend en gefactureerd.",
+      "bullets": [
+        "Vesta-indiening van zorgprestaties",
+        "Facturatiereconciliatie, zodat registratie en facturatie altijd overeenstemmen",
+        "Looncode- en prestatieoverzichten voor de overdracht naar de loonverwerking"
+      ]
+    },
+    "invoicing": {
+      "title": "Facturatie",
+      "tagline": "Van geleverde zorg tot verzonden factuur",
+      "description": "Geleverde zorg wordt een correcte factuur, automatisch opgebouwd uit de geregistreerde prestaties en de tariefsituatie van de cliënt. Pdf-generatie inbegrepen."
+    }
+  },
+  "security": {
+    "title": "De gegevens van je cliënten verdienen ook klinische zorg",
+    "description": "Zorggegevens zijn per definitie gevoelig. Stegocare draait op AWS-infrastructuur met enterprise-authenticatie, rolgebaseerde toegang en logging die persoonsgegevens standaard maskeert. Audittrails zijn de norm, geen optie.",
+    "bullets": [
+      "Veilig aanmelden met enterprise-authenticatie (AWS Cognito)",
+      "Rolgebaseerde toegang: beheerders en medewerkers zien exact wat ze mogen zien",
+      "Auditlogs met maskering van persoonsgegevens en versleutelde opslag",
+      "Gehost in de EU op AWS"
+    ]
+  },
+  "closingCta": {
+    "title": "Klaar om je planners hun week terug te geven?",
+    "description": "Ontdek in een demo van 30 minuten hoe Stegocare bij jouw organisatie past.",
+    "ctaPrimary": "Vraag een demo aan",
+    "ctaSecondary": "Contacteer ons"
+  },
+  "footer": {
+    "tagline": "Stegocare. Planning, registratie en facturatie voor thuiszorgorganisaties."
+  }
+}
