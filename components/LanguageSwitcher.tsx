@@ -16,7 +16,12 @@ const localeOptions: Record<string, LocaleOption> = {
   nl: { flag: "🇳🇱", label: "NL" },
 };
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  /** White text while sitting on the hero image. */
+  light?: boolean;
+}
+
+export default function LanguageSwitcher({ light = false }: LanguageSwitcherProps) {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -47,7 +52,9 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 text-sm text-gray-600 hover:text-black transition-colors px-2 py-1"
+        className={`flex items-center gap-1 text-sm transition-colors px-2 py-1 ${
+          light ? "text-white/85 hover:text-white" : "text-gray-600 hover:text-black"
+        }`}
         aria-label="Switch language"
       >
         <span className="leading-none">{localeOptions[locale].flag}</span>

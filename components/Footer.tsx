@@ -1,109 +1,90 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { LOGIN_URL } from "./links";
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const tNav = useTranslations("navbar");
+  const locale = useLocale();
 
-  const columns = [
-    {
-      titleKey: "navigation",
-      links: [
-        { labelKey: "home", href: "#" },
-        { labelKey: "features", href: "#features" },
-        { labelKey: "security", href: "#security" },
-        { labelKey: "contact", href: "#contact" }
-      ]
-    },
-    {
-      titleKey: "product",
-      links: [
-        { labelKey: "planning", href: "#features" },
-        { labelKey: "crm", href: "#features" },
-        { labelKey: "billing", href: "#features" },
-        { labelKey: "hrPayroll", href: "#features" },
-        { labelKey: "mobileApp", href: "#features" }
-      ]
-    },
-    {
-      titleKey: "integrations",
-      links: [
-        { label: "Vesta", href: "#integrations" },
-        { label: "Liantis", href: "#integrations" },
-        { label: "eHealth", href: "#integrations" },
-        { label: "BelRAI", href: "#integrations" },
-        { label: "itsme\u00ae", href: "#integrations" }
-      ]
-    }
+  const navLinks = [
+    { label: tNav("features"), href: `/${locale}#features` },
+    { label: tNav("security"), href: `/${locale}#security` },
+    { label: tNav("contact"), href: `/${locale}#contact` },
+    { label: tNav("login"), href: LOGIN_URL },
   ];
 
   return (
-    <footer className="bg-white border-t border-gray-100" role="contentinfo">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
-            <a href="#" className="flex items-center gap-2 mb-5">
+    <footer className="relative overflow-hidden" role="contentinfo">
+      <div aria-hidden className="absolute inset-0 -z-10">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/backgrounds/footer.jpg"
+          alt=""
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_58%]"
+        />
+        {/* Scrim so links and legal text stay readable over the painting */}
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-navy/55 to-navy/80" />
+      </div>
+
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="flex flex-col justify-between gap-10 md:flex-row md:items-start">
+          <div>
+            <a
+              href={`/${locale}`}
+              className="flex items-center gap-2.5"
+              aria-label="Stegocare home"
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logos/careville-logo-temp.png"
                 alt="Stegocare logo"
-                className="w-7 h-7 rounded"
+                className="h-7 w-7 rounded"
               />
-              <span className="text-lg font-semibold tracking-tight text-black">
+              <span className="text-lg font-semibold tracking-tight text-white">
                 Stegocare
               </span>
             </a>
-            <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
-              {t("description")}
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/85">
+              {t("tagline")}
             </p>
           </div>
 
-          {/* Link columns */}
-          {columns.map((column) => (
-            <div key={column.titleKey}>
-              <h3 className="text-xs font-medium text-gray-400 uppercase tracking-wider mb-4">
-                {t(column.titleKey)}
-              </h3>
-              <ul className="space-y-2.5">
-                {column.links.map((link) => {
-                  const label =
-                    "labelKey" in link ? t(link.labelKey) : link.label;
-                  return (
-                    <li key={label}>
-                      <a
-                        href={link.href}
-                        className="text-sm text-gray-500 hover:text-black transition-colors"
-                      >
-                        {label}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
+          <nav aria-label={t("navigation")}>
+            <ul className="flex flex-wrap gap-x-8 gap-y-3">
+              {navLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm font-medium text-white/85 transition-colors hover:text-white"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-14 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-400">
+        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/20 pt-8 md:flex-row">
+          <p className="text-sm text-white/75">
             {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="/privacy"
-              className="text-sm text-gray-400 hover:text-black transition-colors"
+              href={`/${locale}/privacy`}
+              className="text-sm text-white/75 transition-colors hover:text-white"
             >
               {t("privacyPolicy")}
             </a>
             <a
-              href="/terms"
-              className="text-sm text-gray-400 hover:text-black transition-colors"
+              href={`/${locale}/terms`}
+              className="text-sm text-white/75 transition-colors hover:text-white"
             >
               {t("termsOfService")}
             </a>
-            <div className="hidden">v0.1</div>
           </div>
         </div>
       </div>

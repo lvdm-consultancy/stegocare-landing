@@ -7,7 +7,7 @@ import { routing } from "@/i18n/routing";
 export const metadata: Metadata = {
   title: "Stegocare",
   description:
-    "One platform to manage your planning, HR, billing, and administration. Built for modern Belgian care teams.",
+    "Scheduling, client files, timesheets, mileage and invoicing for home care organisations in one platform. Built for Flemish home and family care, Vesta-ready from day one.",
   keywords: [
     "healthcare management",
     "care planning",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Stegocare",
     description:
-      "One platform to manage your planning, HR, billing, and administration. Built for modern Belgian care teams.",
+      "Scheduling, client files, timesheets, mileage and invoicing for home care organisations in one platform. Built for Flemish home and family care, Vesta-ready from day one.",
     type: "website",
     locale: "en_BE",
     siteName: "Stegocare",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Stegocare",
     description:
-      "One platform to manage your planning, HR, billing, and administration. Built for modern Belgian care teams.",
+      "Scheduling, client files, timesheets, mileage and invoicing for home care organisations in one platform. Built for Flemish home and family care, Vesta-ready from day one.",
   },
   robots: {
     index: true,

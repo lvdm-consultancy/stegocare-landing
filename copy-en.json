@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "headline": "Care planning that finally keeps up with care.",
+    "subheadline": "Stegocare brings scheduling, client files, timesheets, mileage and invoicing for home care organisations into one platform. With a mobile app that puts every caregiver's day in their pocket. Less administration, fewer errors, more time at the client's side.",
+    "ctaPrimary": "Request a demo",
+    "ctaSecondary": "Log in"
+  },
+  "socialProof": {
+    "tagline": "Built for Flemish home and family care."
+  },
+  "features": {
+    "planning": {
+      "title": "Planning",
+      "tagline": "Recurring schedules without the spreadsheet gymnastics",
+      "description": "Plan once, repeat forever. Stegocare's scheduling engine handles weekly, biweekly and custom recurring appointments natively, with exceptions when life happens: a cancelled visit, a replacement caregiver, a shifted time slot. Conflicts with overlapping appointments or absences are flagged before they become problems, not after.",
+      "bullets": [
+        "Recurring appointments with per-occurrence exceptions",
+        "Automatic conflict detection across employees and clients",
+        "Day, week and department views your planners will actually enjoy using",
+        "Every change instantly visible in the caregiver's mobile app"
+      ]
+    },
+    "mobile": {
+      "title": "Mobile app",
+      "tagline": "The caregiver's entire workday, in one app",
+      "description": "Caregivers open the Stegocare app and see exactly where they need to be and when. They start and stop time registration at the client's door, log trips, travel time and expenses on the spot, and request leave without calling the office. Administration happens where the work happens, so nothing needs retyping afterwards.",
+      "bullets": [
+        "Personal day and month planning, always up to date",
+        "Start and stop visit registration on location",
+        "Log trips, travel time and expenses the moment they happen",
+        "Request leave and check its status from your phone",
+        "Built-in phonebook and organisation news",
+        "Push notifications for schedule changes",
+        "Available on iOS and Android"
+      ]
+    },
+    "clients": {
+      "title": "Client management",
+      "tagline": "The full client file, one click away",
+      "description": "Every client, case and care history in one place. Track care status, suspensions, tariff arrangements and the family situation without hunting through folders or legacy systems.",
+      "bullets": [
+        "Complete case files with status, tariffs and suspension tracking",
+        "Contact network per client: family, physicians, other providers",
+        "Documents attached where they belong, on the file"
+      ]
+    },
+    "timeAndTravel": {
+      "title": "Time & travel",
+      "tagline": "Every minute and every kilometre, accounted for",
+      "description": "Caregivers log their hours in the app while they work. Travel time and mileage between visits are captured and reimbursed according to your rules, and a built-in review flow lets the back office check, correct and lock timesheets per period. Once a period is locked, the numbers stay put.",
+      "bullets": [
+        "Timesheet entry, review and period locking",
+        "Travel time and kilometre allowance tracking",
+        "Expense registration with receipts, straight from the caregiver's phone"
+      ]
+    },
+    "vesta": {
+      "title": "Vesta & reporting",
+      "tagline": "Compliance without the copy-paste",
+      "description": "Stegocare speaks Vesta. Performance data flows to the Flemish government registration system without retyping, and reconciliation reports show you exactly what was submitted and billed.",
+      "bullets": [
+        "Vesta submission of care performances",
+        "Billing reconciliation, so registration and invoicing always match",
+        "Wage code and performance overviews for payroll handoff"
+      ]
+    },
+    "invoicing": {
+      "title": "Invoicing",
+      "tagline": "From performed care to sent invoice",
+      "description": "Delivered care becomes a correct invoice, automatically built from the registered performances and the client's tariff situation. PDF generation included."
+    }
+  },
+  "security": {
+    "title": "Your clients' data deserves clinical care too",
+    "description": "Healthcare data is sensitive by definition. Stegocare runs on AWS infrastructure with enterprise authentication, role-based access, and logging that masks personal data by design. Audit trails come standard, not as an add-on.",
+    "bullets": [
+      "Secure sign-in with enterprise-grade authentication (AWS Cognito)",
+      "Role-based access: admins and staff see exactly what they should",
+      "PII-masking audit logs and encrypted data storage",
+      "Hosted in the EU on AWS"
+    ]
+  },
+  "closingCta": {
+    "title": "Ready to give your planners their week back?",
+    "description": "See how Stegocare fits your organisation in a 30-minute demo.",
+    "ctaPrimary": "Request a demo",
+    "ctaSecondary": "Contact us"
+  },
+  "footer": {
+    "tagline": "Stegocare. Planning, registration and invoicing for home care organisations."
+  }
+}

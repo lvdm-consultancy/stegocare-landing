@@ -24,7 +24,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#3274b4" />
         <link rel="canonical" href="https://stegocare.be" />
         <script
           type="application/ld+json"
