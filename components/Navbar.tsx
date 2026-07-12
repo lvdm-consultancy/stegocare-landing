@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { DEMO_URL, LOGIN_URL } from "./links";
+import { DEMO_PATH } from "./links";
 
 interface NavLink {
   labelKey: string;
@@ -13,9 +13,9 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-  { labelKey: "features", href: "#features" },
-  { labelKey: "security", href: "#security" },
-  { labelKey: "contact", href: "#contact" },
+  { labelKey: "features", href: "/#features" },
+  { labelKey: "security", href: "/#security" },
+  { labelKey: "contact", href: "/contact" },
 ];
 
 interface NavbarProps {
@@ -87,19 +87,7 @@ export default function Navbar({ light = false }: NavbarProps) {
           <div className="flex items-center gap-2 sm:gap-4">
             <LanguageSwitcher light={isLight} />
             <a
-              href={LOGIN_URL}
-              className={`hidden text-sm font-medium transition-colors md:inline ${
-                isLight
-                  ? "text-white/85 hover:text-white"
-                  : "text-ink-soft hover:text-ink"
-              }`}
-            >
-              {t("login")}
-            </a>
-            <a
-              href={DEMO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`/${locale}${DEMO_PATH}`}
               className={`hidden items-center rounded-full bg-neutral-900 px-4.5 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-neutral-700 md:inline-flex ${
                 isLight ? "ring-1 ring-white/40" : ""
               }`}
@@ -142,22 +130,13 @@ export default function Navbar({ light = false }: NavbarProps) {
                   {t(link.labelKey)}
                 </a>
               ))}
-              <div className="space-y-2 pt-3">
+              <div className="pt-3">
                 <a
-                  href={DEMO_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`/${locale}${DEMO_PATH}`}
                   className="block rounded-full bg-neutral-900 py-2.5 text-center font-medium text-white"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {t("requestDemo")}
-                </a>
-                <a
-                  href={LOGIN_URL}
-                  className="block rounded-full py-2.5 text-center font-medium text-ink ring-1 ring-ink/15"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {t("login")}
                 </a>
               </div>
             </div>

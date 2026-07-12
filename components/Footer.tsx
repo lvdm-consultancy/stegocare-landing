@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { LOGIN_URL } from "./links";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -11,12 +10,11 @@ export default function Footer() {
   const navLinks = [
     { label: tNav("features"), href: `/${locale}#features` },
     { label: tNav("security"), href: `/${locale}#security` },
-    { label: tNav("contact"), href: `/${locale}#contact` },
-    { label: tNav("login"), href: LOGIN_URL },
+    { label: tNav("contact"), href: `/${locale}/contact` },
   ];
 
   return (
-    <footer className="relative overflow-hidden" role="contentinfo">
+    <footer className="relative isolate overflow-hidden" role="contentinfo">
       <div aria-hidden className="absolute inset-0 -z-10">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

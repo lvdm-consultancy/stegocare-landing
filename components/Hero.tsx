@@ -1,24 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import SkyBackdrop from "./SkyBackdrop";
 import { findHeroImage } from "./hero-image";
-import { DEMO_URL } from "./links";
-
-interface PartnerLogo {
-  name: string;
-  /** null renders the name only (for marks that don't survive a white-out). */
-  src: string | null;
-  /** White-out treatment for transparent logo art. */
-  whiteClass: string;
-}
-
-const partnerLogos: PartnerLogo[] = [
-  { name: "Vlaamse Overheid", src: null, whiteClass: "" },
-  { name: "eHealth", src: "/logos/ehealth.png", whiteClass: "brightness-0 invert" },
-  { name: "BelRAI", src: "/logos/belrai.png", whiteClass: "brightness-0 invert" },
-  { name: "itsme®", src: "/logos/itsme.webp", whiteClass: "brightness-0 invert" },
-  { name: "Liantis", src: "/logos/liantis.webp", whiteClass: "brightness-0 invert" },
-];
+import { DEMO_PATH } from "./links";
 
 /** Hand-drawn ellipse around the accent word, like a planner's pen circle. */
 function CircledWord({ children }: { children: React.ReactNode }) {
@@ -48,6 +32,7 @@ function CircledWord({ children }: { children: React.ReactNode }) {
 export default function Hero() {
   const t = useTranslations("hero");
   const tProof = useTranslations("socialProof");
+  const locale = useLocale();
   const heroImage = findHeroImage();
   const onImage = Boolean(heroImage);
 
@@ -93,9 +78,7 @@ export default function Hero() {
           style={{ animationDelay: "0.3s" }}
         >
           <a
-            href={DEMO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`/${locale}${DEMO_PATH}`}
             className="group flex items-center gap-1.5"
           >
             <span className="inline-flex items-center rounded-full bg-neutral-900 px-8 py-4 text-base font-semibold text-white shadow-xl shadow-black/35 ring-2 ring-white/80 transition-all group-hover:scale-[1.02] group-hover:bg-neutral-700">
@@ -122,34 +105,6 @@ export default function Hero() {
         >
           {tProof("tagline")}
         </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-9 gap-y-4">
-          {partnerLogos.map((logo) => (
-            <span
-              key={logo.name}
-              className="flex items-center gap-2.5 opacity-90 transition-opacity hover:opacity-100"
-            >
-              {logo.src && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={logo.src}
-                  alt=""
-                  className={`h-6 w-6 object-contain ${
-                    onImage ? logo.whiteClass : "rounded mix-blend-multiply grayscale"
-                  }`}
-                />
-              )}
-              <span
-                className={`text-sm font-medium ${
-                  onImage
-                    ? "text-white drop-shadow-[0_1px_6px_rgba(15,55,105,0.5)]"
-                    : "text-ink-soft"
-                }`}
-              >
-                {logo.name}
-              </span>
-            </span>
-          ))}
-        </div>
       </div>
     </header>
   );

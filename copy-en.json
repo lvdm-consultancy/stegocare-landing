@@ -6,7 +6,7 @@
     "ctaSecondary": "Log in"
   },
   "socialProof": {
-    "tagline": "Built for Flemish home and family care."
+    "tagline": "Built for Flemish home and family care. Vesta-ready from day one."
   },
   "features": {
     "planning": {
@@ -23,25 +23,38 @@
     "mobile": {
       "title": "Mobile app",
       "tagline": "The caregiver's entire workday, in one app",
-      "description": "Caregivers open the Stegocare app and see exactly where they need to be and when. They start and stop time registration at the client's door, log trips, travel time and expenses on the spot, and request leave without calling the office. Administration happens where the work happens, so nothing needs retyping afterwards.",
+      "description": "Caregivers open the Stegocare app and see exactly where they need to be and when. They start and stop time registration at the client's door, log trips, travel time and expenses on the spot, and request leave without calling the office. Push notifications keep everyone in the loop: a shifted appointment, an approved leave request or a message from the office lands on the caregiver's phone the moment it happens.",
       "bullets": [
         "Personal day and month planning, always up to date",
         "Start and stop visit registration on location",
         "Log trips, travel time and expenses the moment they happen",
         "Request leave and check its status from your phone",
+        "Push notifications for schedule changes and office announcements",
+        "Upload documents (photo or PDF) straight from your phone",
         "Built-in phonebook and organisation news",
-        "Push notifications for schedule changes",
         "Available on iOS and Android"
       ]
     },
     "clients": {
       "title": "Client management",
       "tagline": "The full client file, one click away",
-      "description": "Every client, case and care history in one place. Track care status, suspensions, tariff arrangements and the family situation without hunting through folders or legacy systems.",
+      "description": "Every client, case and care history in one place. Track care status, suspensions, tariff arrangements and the family situation without hunting through folders or legacy systems. Intake and revision flows guide your staff from the first phone call to the finalised file, home visit included.",
       "bullets": [
         "Complete case files with status, tariffs and suspension tracking",
+        "Guided intake and revision flows with a full event timeline",
         "Contact network per client: family, physicians, other providers",
         "Documents attached where they belong, on the file"
+      ]
+    },
+    "documents": {
+      "title": "Documents & forms",
+      "tagline": "Official paperwork, generated instead of typed",
+      "description": "Preparing an intake or revision home visit? Stegocare generates the official forms, like the F51, as pre-filled PDFs from the data already in the client file. Download them for the visit, adjust the inputs where needed, and upload the signed version straight back onto the file. Every document opens in the built-in viewer, no external tools required.",
+      "bullets": [
+        "Automatic F51 generation for intake and revision home visits, pre-filled from the client file",
+        "Download, edit inputs and upload the signed copy in one flow",
+        "Built-in PDF and document viewer: files open right in the app",
+        "Invoice PDFs generated from registered performances"
       ]
     },
     "timeAndTravel": {

@@ -6,7 +6,7 @@
     "ctaSecondary": "Aanmelden"
   },
   "socialProof": {
-    "tagline": "Gebouwd voor de Vlaamse gezins- en thuiszorg."
+    "tagline": "Gebouwd voor de Vlaamse gezins- en thuiszorg. Vesta-klaar vanaf dag één."
   },
   "features": {
     "planning": {
@@ -23,25 +23,38 @@
     "mobile": {
       "title": "Mobiele app",
       "tagline": "De volledige werkdag van de zorgverlener, in één app",
-      "description": "Zorgverleners openen de Stegocare-app en zien meteen waar ze wanneer verwacht worden. Ze starten en stoppen de tijdsregistratie aan de deur van de cliënt, registreren verplaatsingen, reistijd en onkosten ter plaatse, en vragen verlof aan zonder naar kantoor te bellen. Administratie gebeurt waar het werk gebeurt, dus achteraf hoeft niets overgetypt te worden.",
+      "description": "Zorgverleners openen de Stegocare-app en zien meteen waar ze wanneer verwacht worden. Ze starten en stoppen de tijdsregistratie aan de deur van de cliënt, registreren verplaatsingen, reistijd en onkosten ter plaatse, en vragen verlof aan zonder naar kantoor te bellen. Pushmeldingen houden iedereen mee: een verschoven afspraak, een goedgekeurde verlofaanvraag of een bericht van kantoor komt meteen op de smartphone van de zorgverlener terecht.",
       "bullets": [
         "Persoonlijke dag- en maandplanning, altijd actueel",
         "Bezoekregistratie starten en stoppen op locatie",
         "Verplaatsingen, reistijd en onkosten registreren op het moment zelf",
         "Verlof aanvragen en de status opvolgen vanop je smartphone",
+        "Pushmeldingen bij planningswijzigingen en berichten van kantoor",
+        "Documenten opladen (foto of pdf) rechtstreeks vanop je smartphone",
         "Ingebouwd telefoonboek en organisatienieuws",
-        "Pushmeldingen bij planningswijzigingen",
         "Beschikbaar op iOS en Android"
       ]
     },
     "clients": {
       "title": "Cliëntbeheer",
       "tagline": "Het volledige cliëntdossier, één klik verwijderd",
-      "description": "Elke cliënt, elk dossier en elke zorghistoriek op één plek. Volg zorgstatus, schorsingen, tariefregelingen en de gezinssituatie op zonder te zoeken in mappen of verouderde systemen.",
+      "description": "Elke cliënt, elk dossier en elke zorghistoriek op één plek. Volg zorgstatus, schorsingen, tariefregelingen en de gezinssituatie op zonder te zoeken in mappen of verouderde systemen. Intake- en herzieningsflows begeleiden je medewerkers van het eerste telefoontje tot het afgewerkte dossier, huisbezoek inbegrepen.",
       "bullets": [
         "Volledige dossiers met status, tarieven en opvolging van schorsingen",
+        "Begeleide intake- en herzieningsflows met een volledige tijdlijn van gebeurtenissen",
         "Contactnetwerk per cliënt: familie, artsen, andere zorgverleners",
         "Documenten bewaard waar ze thuishoren, in het dossier"
+      ]
+    },
+    "documents": {
+      "title": "Documenten & formulieren",
+      "tagline": "Officiële papieren, gegenereerd in plaats van getypt",
+      "description": "Een intake- of herzieningshuisbezoek voorbereiden? Stegocare genereert de officiële formulieren, zoals de F51, als vooraf ingevulde pdf's op basis van de gegevens die al in het dossier zitten. Download ze voor het bezoek, pas waar nodig de invoer aan en laad de ondertekende versie meteen terug op in het dossier. Elk document opent in de ingebouwde viewer, zonder externe programma's.",
+      "bullets": [
+        "Automatische F51-generatie bij intake- en herzieningshuisbezoeken, vooraf ingevuld vanuit het dossier",
+        "Downloaden, invoer aanpassen en het ondertekende exemplaar opladen in één flow",
+        "Ingebouwde pdf- en documentviewer: bestanden openen rechtstreeks in de app",
+        "Factuur-pdf's gegenereerd op basis van de geregistreerde prestaties"
       ]
     },
     "timeAndTravel": {

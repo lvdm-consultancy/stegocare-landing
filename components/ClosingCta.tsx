@@ -1,9 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { CONTACT_URL, DEMO_URL } from "./links";
+import { useLocale, useTranslations } from "next-intl";
+import { DEMO_PATH } from "./links";
 
 export default function ClosingCta() {
   const t = useTranslations("closingCta");
+  const locale = useLocale();
 
   return (
     <section id="contact" className="scroll-mt-20 bg-mist">
@@ -16,9 +17,7 @@ export default function ClosingCta() {
         </p>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
           <a
-            href={DEMO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`/${locale}${DEMO_PATH}`}
             className="group flex items-center gap-1.5"
           >
             <span className="inline-flex items-center rounded-full bg-neutral-900 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-black/25 transition-all group-hover:scale-[1.02] group-hover:bg-neutral-700">
@@ -29,7 +28,7 @@ export default function ClosingCta() {
             </span>
           </a>
           <a
-            href={CONTACT_URL}
+            href={`/${locale}/contact`}
             className="inline-flex items-center rounded-full bg-white px-8 py-4 text-base font-semibold text-ink shadow-sm ring-1 ring-ink/10 transition-colors hover:bg-neutral-50"
           >
             {t("ctaSecondary")}

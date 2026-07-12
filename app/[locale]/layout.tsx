@@ -1,78 +1,65 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "Stegocare",
-  description:
-    "Scheduling, client files, timesheets, mileage and invoicing for home care organisations in one platform. Built for Flemish home and family care, Vesta-ready from day one.",
-  keywords: [
-    "healthcare management",
-    "care planning",
-    "Belgian healthcare",
-    "HR management",
-    "billing automation",
-    "BelRAI",
-    "VESTA",
-    "care organizations",
-    "thuiszorg",
-    "zorgmanagement",
-    "planning software",
-    "healthcare software Belgium",
-    "eHealth integration",
-    "care worker scheduling",
-  ],
-  authors: [{ name: "LVDM Consultancy" }],
-  creator: "LVDM Consultancy",
-  publisher: "Stegocare",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL("https://stegocare.be"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-BE": "/en",
-      "nl-BE": "/nl",
-      "fr-BE": "/fr",
+const OG_LOCALE: Record<string, string> = {
+  nl: "nl_BE",
+  fr: "fr_BE",
+  en: "en_BE",
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    authors: [{ name: "LVDM Consultancy" }],
+    creator: "LVDM Consultancy",
+    publisher: "Stegocare",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
     },
-  },
-  openGraph: {
-    title: "Stegocare",
-    description:
-      "Scheduling, client files, timesheets, mileage and invoicing for home care organisations in one platform. Built for Flemish home and family care, Vesta-ready from day one.",
-    type: "website",
-    locale: "en_BE",
-    siteName: "Stegocare",
-    url: "https://stegocare.be",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Stegocare",
-    description:
-      "Scheduling, client files, timesheets, mileage and invoicing for home care organisations in one platform. Built for Flemish home and family care, Vesta-ready from day one.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    metadataBase: new URL("https://stegocare.be"),
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "website",
+      locale: OG_LOCALE[locale] ?? "nl_BE",
+      siteName: "Stegocare",
+      url: `https://stegocare.be/${locale}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+    robots: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
-  },
-  verification: {
-    // Add your verification codes here when available
-    // google: "your-google-verification-code",
-    // yandex: "your-yandex-verification-code",
-  },
-};
+    verification: {
+      // Add your verification codes here when available
+      // google: "your-google-verification-code",
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

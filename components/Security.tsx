@@ -12,7 +12,7 @@ export default function Security() {
 
   return (
     <section id="security" className="scroll-mt-20">
-      <div className="mx-auto max-w-6xl px-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
+      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <Reveal className="overflow-hidden rounded-[2.5rem] bg-navy px-6 py-14 sm:px-12 lg:px-16 lg:py-20">
           <div className="grid gap-12 lg:grid-cols-[5fr_6fr] lg:gap-16">
             <div>

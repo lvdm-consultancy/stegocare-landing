@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Stegocare | Home and family care software",
+    "description": "Software for family and home care organisations: Stegocare bundles scheduling, client files, time registration, Vesta reporting and invoicing in one platform, with a mobile app for caregivers."
+  },
   "navbar": {
     "features": "Features",
     "security": "Security",
@@ -10,7 +14,7 @@
   },
   "hero": {
     "headline": "Care planning that finally keeps up with <em>care</em>.",
-    "subheadline": "Stegocare brings scheduling, client files, timesheets, mileage and invoicing for home care organisations into one platform. With a mobile app that puts every caregiver's day in their pocket. Less administration, fewer errors, more time at the client's side.",
+    "subheadline": "Stegocare brings scheduling, client files, timesheets, mileage and invoicing for family and home care organisations into one platform. With a mobile app that puts every caregiver's day in their pocket. Less administration, fewer errors, more time at the client's side.",
     "ctaPrimary": "Request a demo",
     "ctaSecondary": "Log in"
   },
@@ -18,6 +22,7 @@
     "tagline": "Built for Flemish home and family care."
   },
   "features": {
+    "viewMore": "Learn more",
     "planning": {
       "title": "Planning",
       "tagline": "Recurring schedules without the spreadsheet gymnastics",
@@ -32,25 +37,38 @@
     "mobile": {
       "title": "Mobile app",
       "tagline": "The caregiver's entire workday, in one app",
-      "description": "Caregivers open the Stegocare app and see exactly where they need to be and when. They start and stop time registration at the client's door, log trips, travel time and expenses on the spot, and request leave without calling the office. Administration happens where the work happens, so nothing needs retyping afterwards.",
+      "description": "Caregivers open the Stegocare app and see exactly where they need to be and when. They start and stop time registration at the client's door, log trips, travel time and expenses on the spot, and request leave without calling the office. Push notifications keep everyone in the loop: a shifted appointment, an approved leave request or a message from the office lands on the caregiver's phone the moment it happens.",
       "bullets": [
         "Personal day and month planning, always up to date",
         "Start and stop visit registration on location",
         "Log trips, travel time and expenses the moment they happen",
         "Request leave and check its status from your phone",
+        "Push notifications for schedule changes and office announcements",
+        "Upload documents (photo or PDF) straight from your phone",
         "Built-in phonebook and organisation news",
-        "Push notifications for schedule changes",
         "Available on iOS and Android"
       ]
     },
     "clients": {
       "title": "Client management",
       "tagline": "The full client file, one click away",
-      "description": "Every client, case and care history in one place. Track care status, suspensions, tariff arrangements and the family situation without hunting through folders or legacy systems.",
+      "description": "Every client, case and care history in one place. Track care status, suspensions, tariff arrangements and the family situation without hunting through folders or legacy systems. Intake and revision flows guide your staff from the first phone call to the finalised file, home visit included.",
       "bullets": [
         "Complete case files with status, tariffs and suspension tracking",
+        "Guided intake and revision flows with a full event timeline",
         "Contact network per client: family, physicians, other providers",
         "Documents attached where they belong, on the file"
+      ]
+    },
+    "documents": {
+      "title": "Documents & forms",
+      "tagline": "Official paperwork, generated instead of typed",
+      "description": "Preparing an intake or revision home visit? Stegocare generates the official forms, like the F51, as pre-filled PDFs from the data already in the client file. Download them for the visit, adjust the inputs where needed, and upload the signed version straight back onto the file. Every document opens in the built-in viewer, no external tools required.",
+      "bullets": [
+        "Automatic F51 generation for intake and revision home visits, pre-filled from the client file",
+        "Download, edit inputs and upload the signed copy in one flow",
+        "Built-in PDF and document viewer: files open right in the app",
+        "Invoice PDFs generated from registered performances"
       ]
     },
     "timeAndTravel": {
@@ -79,6 +97,305 @@
       "description": "Delivered care becomes a correct invoice, automatically built from the registered performances and the client's tariff situation. PDF generation included."
     }
   },
+  "integrations": {
+    "title": "Trusted integrations",
+    "heading": "Seamlessly connected to the platforms you rely on",
+    "description": "From Vesta submissions to your payroll and accounting: Stegocare exchanges data directly with the services you already work with, so nothing gets retyped twice.",
+    "addMore": "And more"
+  },
+  "featurePages": {
+    "common": {
+      "allFeatures": "All features",
+      "highlightsTitle": "At a glance",
+      "faqTitle": "Frequently asked questions",
+      "relatedTitle": "Also discover",
+      "cta": "Request a demo"
+    },
+    "planning": {
+      "metaTitle": "Planning software for family and home care | Stegocare",
+      "metaDescription": "Recurring care schedules with exceptions, automatic conflict detection and changes that appear instantly in every caregiver's app.",
+      "intro": "Planning is the beating heart of every home and family care organisation. Stegocare gives your planners one workbench where recurring appointments, replacements and last-minute changes stay manageable, without spreadsheets on the side.",
+      "sections": [
+        {
+          "title": "Plan once, repeat forever",
+          "body": "The scheduling engine supports weekly, biweekly and custom recurring appointments. When life deviates from the schedule, you record an exception per occurrence: a cancelled visit, a replacement caregiver or a shifted time slot, without breaking the whole series."
+        },
+        {
+          "title": "See conflicts before they happen",
+          "body": "Overlapping appointments and absences are flagged automatically, across employees and clients. Your planner resolves conflicts before a caregiver ends up at a closed door."
+        },
+        {
+          "title": "Straight to the caregiver",
+          "body": "Every change to the schedule is instantly visible in the caregiver's mobile app. No more calling or emailing to pass on a shifted visit."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does Stegocare support recurring appointments with exceptions?",
+          "a": "Yes. Series can run weekly, biweekly or on a custom pattern, and every occurrence can be adjusted or cancelled individually."
+        },
+        {
+          "q": "How does Stegocare prevent double bookings?",
+          "a": "The system automatically detects conflicts with overlapping appointments and absences, across employees and clients, and flags them to the planner right away."
+        },
+        {
+          "q": "Do caregivers see schedule changes immediately?",
+          "a": "Yes, every change appears instantly in the caregiver's mobile app."
+        }
+      ]
+    },
+    "mobile": {
+      "metaTitle": "Mobile app for caregivers | Stegocare",
+      "metaDescription": "Schedule, visit registration, mileage, expenses and leave: the Stegocare app puts the caregiver's entire workday on iOS and Android.",
+      "intro": "Caregivers work on the road, not behind a desk. The Stegocare app brings their entire workday to the smartphone: from the morning's schedule to the last registration at the client's door.",
+      "sections": [
+        {
+          "title": "The workday starts in the app",
+          "body": "Every caregiver sees their personal day and month planning, always up to date. When something shifts, the change appears immediately, push notification included."
+        },
+        {
+          "title": "Register in the moment",
+          "body": "Time registration starts and stops at the client's door. Trips, travel time and expenses with receipts are captured on the spot, so nothing has to be reconstructed in the evening."
+        },
+        {
+          "title": "Fewer calls to the office",
+          "body": "Requesting and tracking leave, uploading documents as a photo or PDF, checking the phonebook and reading organisation news: it all happens from the smartphone."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which devices does the Stegocare app run on?",
+          "a": "The app is available for iOS and Android."
+        },
+        {
+          "q": "Can caregivers register expenses and mileage in the app?",
+          "a": "Yes. Trips, travel time and expenses with receipts are registered the moment they happen and reimbursed according to your organisation's rules."
+        },
+        {
+          "q": "Do caregivers get notified about changes?",
+          "a": "Yes, push notifications alert them to schedule changes, approved leave requests and messages from the office."
+        }
+      ]
+    },
+    "clients": {
+      "metaTitle": "Client management for home care | Stegocare",
+      "metaDescription": "Complete client files with care status, tariffs, contact network and guided intake and revision flows, all in one place.",
+      "intro": "Organising care means seeing the whole picture: care status, tariff arrangement, family situation and history. Stegocare bundles every client file in one place, from the first phone call to day-to-day follow-up.",
+      "sections": [
+        {
+          "title": "A file that grows with the client",
+          "body": "Every file holds the care status, tariff arrangements, suspensions and the full care history. Hunting through folders or legacy systems is a thing of the past."
+        },
+        {
+          "title": "Intake and revision with a steady hand",
+          "body": "Guided flows take your staff from first contact to finalised file, home visit included, with a complete timeline of events."
+        },
+        {
+          "title": "The network around the client",
+          "body": "Family, physicians and other care providers sit on the file as a contact network, and documents are stored where they belong: with the client."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What does a client file in Stegocare contain?",
+          "a": "The care status, tariff arrangements, suspensions, the contact network, documents and a full timeline of events."
+        },
+        {
+          "q": "Does Stegocare support intake and revision home visits?",
+          "a": "Yes. Guided flows lead your staff through intake and revision, and the accompanying forms such as the F51 are generated pre-filled."
+        },
+        {
+          "q": "Is client data safe in Stegocare?",
+          "a": "Yes. Stegocare runs on AWS in the EU, with role-based access and audit logs that mask personal data."
+        }
+      ]
+    },
+    "documents": {
+      "metaTitle": "Documents and forms such as the F51 | Stegocare",
+      "metaDescription": "Generate official forms like the F51 pre-filled from the client file and manage signed documents in the built-in viewer.",
+      "intro": "Official paperwork is part of care, but retyping shouldn't be. Stegocare generates forms from the data already in the file and keeps the whole journey, from download to signed copy, in one flow.",
+      "sections": [
+        {
+          "title": "F51 without the typing",
+          "body": "For intake and revision home visits, Stegocare generates the official forms, such as the F51, as pre-filled PDFs based on the client file. Download them before the visit and adjust the inputs where needed."
+        },
+        {
+          "title": "From signature to file",
+          "body": "The signed copy goes straight back onto the client file. That closes the administrative loop, without loose emails or folders."
+        },
+        {
+          "title": "Everything opens in the app",
+          "body": "The built-in PDF and document viewer opens files right inside Stegocare, no external tools required. Invoice PDFs generated from registered performances live here too."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which forms does Stegocare generate automatically?",
+          "a": "Among others the F51 for intake and revision home visits, pre-filled from the client file, plus invoice PDFs based on registered performances."
+        },
+        {
+          "q": "Can I upload signed documents back?",
+          "a": "Yes. Downloading, adjusting inputs and uploading the signed copy happens in one flow, straight onto the file."
+        },
+        {
+          "q": "Do I need external software to view documents?",
+          "a": "No, the built-in viewer opens PDFs and documents right in the app."
+        }
+      ]
+    },
+    "timeAndTravel": {
+      "metaTitle": "Time registration and mileage | Stegocare",
+      "metaDescription": "Hours, travel time, mileage and expenses registered in the app, then reviewed, corrected and locked per period by the back office.",
+      "intro": "Correct wages and invoices start with correct registrations. In Stegocare, caregivers log their hours while they work, and the back office keeps full control over what ends up final.",
+      "sections": [
+        {
+          "title": "Registered where it happens",
+          "body": "Hours are logged in the mobile app during the workday. Travel time and mileage between visits are captured and reimbursed according to your organisation's rules."
+        },
+        {
+          "title": "Review before it counts",
+          "body": "A built-in review flow lets the back office check and correct performances before they flow through to payroll and invoicing."
+        },
+        {
+          "title": "Locked means locked",
+          "body": "Periods are closed and locked. Once locked, the numbers stay put, giving payroll and invoicing solid ground to stand on."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do caregivers register their hours?",
+          "a": "In the mobile app, in the moment: time registration starts and stops at the client's door."
+        },
+        {
+          "q": "Are mileage and travel time reimbursed?",
+          "a": "Travel time and kilometres between visits are captured and reimbursed according to the rules your organisation sets."
+        },
+        {
+          "q": "Can a registered period still change?",
+          "a": "The back office can review and correct performances until the period is locked. After that, the numbers stay put."
+        }
+      ]
+    },
+    "vesta": {
+      "metaTitle": "Vesta submission and reporting | Stegocare",
+      "metaDescription": "Care performances flow to Vesta without retyping, with reconciliation reports and wage code overviews for payroll.",
+      "intro": "Anyone providing family care in Flanders reports to Vesta. Stegocare speaks that language natively: performance data flows through without retyping, and reports show exactly what was submitted.",
+      "sections": [
+        {
+          "title": "Submit without retyping",
+          "body": "Care performances are submitted to Vesta from Stegocare, directly based on your caregivers' registrations. Manually retyping into the Flemish government's registration system is a thing of the past."
+        },
+        {
+          "title": "Reconciliation that adds up",
+          "body": "Reconciliation reports show exactly what was submitted and billed, so registration and invoicing always match."
+        },
+        {
+          "title": "Ready for payroll",
+          "body": "Wage code and performance overviews stand ready for handoff to your payroll processing or social secretariat."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is Vesta?",
+          "a": "Vesta is the Flemish government's registration system for family care, where recognised services submit their care performances."
+        },
+        {
+          "q": "Do I have to retype performances into Vesta manually?",
+          "a": "No, Stegocare submits care performances directly based on the registered data."
+        },
+        {
+          "q": "How do I know everything was submitted correctly?",
+          "a": "Reconciliation reports show exactly what was submitted and billed, so deviations surface immediately."
+        }
+      ]
+    },
+    "invoicing": {
+      "metaTitle": "Invoicing software for home care organisations | Stegocare",
+      "metaDescription": "Invoices built automatically from registered performances and the client's tariff situation, with PDF generation and credit notes.",
+      "intro": "Between delivered care and a sent invoice, many organisations lose hours of counting. Stegocare builds invoices automatically from the registered performances and each client's tariff situation.",
+      "sections": [
+        {
+          "title": "From performance to invoice",
+          "body": "Every registered performance automatically finds its way onto the right invoice, at the tariff that applies to that client."
+        },
+        {
+          "title": "Tariffs that are right",
+          "body": "The client's tariff situation is applied when each invoice is built. No separate lists to maintain."
+        },
+        {
+          "title": "PDFs and credit notes included",
+          "body": "Invoices go out as PDFs, and credit notes and manual invoices have their place in the same module."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How are invoices built?",
+          "a": "Automatically, based on the registered performances and the client's tariff situation, PDF generation included."
+        },
+        {
+          "q": "Can I also create credit notes and manual invoices?",
+          "a": "Yes, alongside automatically generated invoices the invoicing module supports credit notes and manual invoices."
+        },
+        {
+          "q": "Does invoicing tie into Vesta?",
+          "a": "Yes, reconciliation reports show exactly what was submitted and billed, so the two always match."
+        }
+      ]
+    }
+  },
+  "contactPage": {
+    "metaTitle": "Contact | Stegocare",
+    "metaDescription": "Get in touch with the Stegocare team: email us, visit us at Brain Embassy in Antwerp or request a demo right away.",
+    "heading": "Contact",
+    "intro": "Questions about Stegocare? Email us, drop by the office or request a demo right away.",
+    "visit": {
+      "title": "Visit us",
+      "body": "Our team works from Brain Embassy, in the heart of Antwerp.",
+      "maps": "Show on map"
+    },
+    "mail": {
+      "title": "Email us",
+      "body": "For questions, demos or partnerships. We reply within one business day.",
+      "demoHint": "Rather see Stegocare in action right away?",
+      "demoLink": "Request a demo"
+    },
+    "company": {
+      "title": "Company details",
+      "name": "LVDM Consultancy BV",
+      "vat": "VAT BE 1026.858.232",
+      "seatLabel": "Registered office",
+      "seat": "Lange Dijkstraat 38/101, 2060 Antwerp",
+      "note": "The registered office is not a visiting address: you'll find us at Brain Embassy.",
+      "websiteLabel": "Website"
+    }
+  },
+  "demoPage": {
+    "metaTitle": "Request a demo | Stegocare",
+    "metaDescription": "Book a 30-minute demo and see how Stegocare, software for family and home care, fits your organisation.",
+    "heading": "Request a demo",
+    "intro": "Tell us briefly who you are and we'll get in touch to schedule a demo. No obligations, no sales pitch: we simply show how Stegocare works, starting from your situation.",
+    "highlights": [
+      "30 minutes, online or at your office",
+      "Tailored to how your organisation works",
+      "All your questions answered by the builders themselves"
+    ],
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email address",
+      "organisation": "Organisation",
+      "employees": "Number of employees",
+      "employeesPlaceholder": "Select a range",
+      "message": "Message (optional)",
+      "messagePlaceholder": "Anything you'd like us to cover?",
+      "submit": "Send request",
+      "sending": "Sending...",
+      "successTitle": "Thanks for your request!",
+      "successBody": "We'll get in touch within one business day to schedule the demo.",
+      "error": "Something went wrong while sending. Please try again in a moment.",
+      "privacy": "We only use your details to follow up on your demo request. They are never shared with third parties."
+    }
+  },
   "security": {
     "title": "Your clients' data deserves clinical care too",
     "description": "Healthcare data is sensitive by definition. Stegocare runs on AWS infrastructure with enterprise authentication, role-based access, and logging that masks personal data by design. Audit trails come standard, not as an add-on.",
@@ -93,16 +410,21 @@
       "nis2": "NIS2 compliant"
     }
   },
+  "builders": {
+    "title": "The builders behind it",
+    "description": "Stegocare is a collaboration between LVDM Consultancy and Gezinszorg Villers: software developers and a home care organisation building side by side. Every feature is shaped, tested and challenged on the care work floor before it ships. The best care software is built with caregivers, not just for them.",
+    "imageAlt": "The Stegocare team at work"
+  },
   "closingCta": {
     "title": "Ready to give your planners their week back?",
-    "description": "See how Stegocare fits your organisation in a 30-minute demo.",
+    "description": "See in a 30-minute demo how Stegocare's software fits your family or home care organisation.",
     "ctaPrimary": "Request a demo",
     "ctaSecondary": "Contact us"
   },
   "footer": {
-    "tagline": "Stegocare. Planning, registration and invoicing for home care organisations.",
+    "tagline": "Stegocare. Software for family and home care: planning, registration and invoicing in one platform.",
     "navigation": "Navigation",
-    "copyright": "© {year} Stegocare by LVDM Consultancy and Villers vzw. All rights reserved.",
+    "copyright": "© {year} Stegocare by LVDM Consultancy and Gezinszorg Villers. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }

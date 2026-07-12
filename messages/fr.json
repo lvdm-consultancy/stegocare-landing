@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Stegocare | Logiciel pour l'aide aux familles et les soins à domicile",
+    "description": "Logiciel pour les services d'aide aux familles et de soins à domicile : Stegocare réunit planification, dossiers clients, enregistrement du temps, rapports Vesta et facturation dans une seule plateforme, avec une app mobile pour les intervenants."
+  },
   "navbar": {
     "features": "Fonctionnalités",
     "security": "Sécurité",
@@ -10,7 +14,7 @@
   },
   "hero": {
     "headline": "La planification qui suit enfin le rythme <em>du soin</em>.",
-    "subheadline": "Stegocare réunit la planification, les dossiers clients, l'enregistrement du temps, les déplacements et la facturation des organisations d'aide à domicile sur une seule plateforme. Avec une application mobile qui met la journée de chaque intervenant dans sa poche. Moins d'administration, moins d'erreurs, plus de temps auprès du client.",
+    "subheadline": "Stegocare réunit la planification, les dossiers clients, l'enregistrement du temps, les déplacements et la facturation des services d'aide aux familles et de soins à domicile sur une seule plateforme. Avec une application mobile qui met la journée de chaque intervenant dans sa poche. Moins d'administration, moins d'erreurs, plus de temps auprès du client.",
     "ctaPrimary": "Demander une démo",
     "ctaSecondary": "Se connecter"
   },
@@ -18,6 +22,7 @@
     "tagline": "Conçu pour l'aide familiale et les soins à domicile flamands."
   },
   "features": {
+    "viewMore": "En savoir plus",
     "planning": {
       "title": "Planification",
       "tagline": "Des horaires récurrents sans acrobaties Excel",
@@ -32,25 +37,38 @@
     "mobile": {
       "title": "Application mobile",
       "tagline": "Toute la journée de travail de l'intervenant, dans une seule app",
-      "description": "Les intervenants ouvrent l'app Stegocare et voient exactement où ils sont attendus, et quand. Ils démarrent et arrêtent l'enregistrement du temps à la porte du client, consignent trajets, temps de déplacement et frais sur place, et demandent leurs congés sans appeler le bureau. L'administration se fait là où se fait le travail : plus rien à retaper après coup.",
+      "description": "Les intervenants ouvrent l'app Stegocare et voient exactement où ils sont attendus, et quand. Ils démarrent et arrêtent l'enregistrement du temps à la porte du client, consignent trajets, temps de déplacement et frais sur place, et demandent leurs congés sans appeler le bureau. Les notifications push tiennent tout le monde informé : un rendez-vous déplacé, une demande de congé approuvée ou un message du bureau arrive sur le téléphone de l'intervenant à l'instant même.",
       "bullets": [
         "Planning personnel du jour et du mois, toujours à jour",
         "Démarrage et arrêt de l'enregistrement des visites sur place",
         "Trajets, temps de déplacement et frais consignés au moment même",
         "Demande de congé et suivi du statut depuis votre téléphone",
+        "Notifications push pour les changements de planning et les messages du bureau",
+        "Envoi de documents (photo ou PDF) directement depuis votre téléphone",
         "Répertoire intégré et actualités de l'organisation",
-        "Notifications push en cas de changement de planning",
         "Disponible sur iOS et Android"
       ]
     },
     "clients": {
       "title": "Gestion des clients",
       "tagline": "Le dossier client complet, à un clic",
-      "description": "Chaque client, chaque dossier et chaque historique de soins au même endroit. Suivez le statut des soins, les suspensions, les régimes tarifaires et la situation familiale sans fouiller dans des classeurs ou des systèmes dépassés.",
+      "description": "Chaque client, chaque dossier et chaque historique de soins au même endroit. Suivez le statut des soins, les suspensions, les régimes tarifaires et la situation familiale sans fouiller dans des classeurs ou des systèmes dépassés. Les parcours d'admission et de révision guident vos collaborateurs du premier appel au dossier finalisé, visite à domicile comprise.",
       "bullets": [
         "Dossiers complets avec statut, tarifs et suivi des suspensions",
+        "Parcours guidés d'admission et de révision avec chronologie complète des événements",
         "Réseau de contacts par client : famille, médecins, autres prestataires",
         "Documents rangés là où ils doivent être : dans le dossier"
+      ]
+    },
+    "documents": {
+      "title": "Documents & formulaires",
+      "tagline": "Les documents officiels, générés au lieu d'être tapés",
+      "description": "Vous préparez une visite d'admission ou de révision ? Stegocare génère les formulaires officiels, comme le F51, en PDF préremplis à partir des données déjà présentes dans le dossier. Téléchargez-les pour la visite, ajustez les champs si nécessaire et rechargez la version signée directement dans le dossier. Chaque document s'ouvre dans la visionneuse intégrée, sans outil externe.",
+      "bullets": [
+        "Génération automatique du F51 pour les visites d'admission et de révision, prérempli depuis le dossier",
+        "Télécharger, ajuster les champs et recharger l'exemplaire signé en un seul flux",
+        "Visionneuse PDF et documents intégrée : les fichiers s'ouvrent directement dans l'app",
+        "PDF de factures générés à partir des prestations enregistrées"
       ]
     },
     "timeAndTravel": {
@@ -79,6 +97,305 @@
       "description": "Les soins délivrés deviennent une facture correcte, générée automatiquement à partir des prestations enregistrées et de la situation tarifaire du client. Génération PDF incluse."
     }
   },
+  "integrations": {
+    "title": "Intégrations de confiance",
+    "heading": "Connecté en toute transparence aux plateformes auxquelles vous vous fiez",
+    "description": "Des soumissions Vesta à la paie et à la comptabilité : Stegocare échange les données directement avec les services que vous utilisez déjà, pour que rien ne soit retapé deux fois.",
+    "addMore": "Et plus"
+  },
+  "featurePages": {
+    "common": {
+      "allFeatures": "Toutes les fonctionnalités",
+      "highlightsTitle": "En bref",
+      "faqTitle": "Questions fréquentes",
+      "relatedTitle": "Découvrez aussi",
+      "cta": "Demander une démo"
+    },
+    "planning": {
+      "metaTitle": "Logiciel de planification pour l'aide et les soins à domicile | Stegocare",
+      "metaDescription": "Plannings de soins récurrents avec exceptions, détection automatique des conflits et modifications visibles immédiatement dans l'app de chaque intervenant.",
+      "intro": "Le planning est le cœur battant de toute organisation d'aide et de soins à domicile. Stegocare offre à vos planificateurs un seul plan de travail où rendez-vous récurrents, remplacements et changements de dernière minute restent maîtrisables, sans tableurs à côté.",
+      "sections": [
+        {
+          "title": "Planifier une fois, répéter sans fin",
+          "body": "Le moteur de planification prend en charge les rendez-vous hebdomadaires, bimensuels et récurrents personnalisés. Quand la vie s'écarte du planning, vous enregistrez une exception par occurrence : une visite annulée, un intervenant remplaçant ou un créneau déplacé, sans casser toute la série."
+        },
+        {
+          "title": "Voir les conflits avant qu'ils n'arrivent",
+          "body": "Les rendez-vous qui se chevauchent et les absences sont signalés automatiquement, à travers collaborateurs et clients. Votre planificateur résout les conflits avant qu'un intervenant ne se retrouve devant une porte fermée."
+        },
+        {
+          "title": "Directement chez l'intervenant",
+          "body": "Chaque modification du planning est immédiatement visible dans l'application mobile de l'intervenant. Plus besoin d'appeler ou d'envoyer un mail pour transmettre un changement."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Stegocare prend-il en charge les rendez-vous récurrents avec exceptions ?",
+          "a": "Oui. Les séries peuvent être hebdomadaires, bimensuelles ou suivre un schéma personnalisé, et chaque occurrence peut être adaptée ou annulée individuellement."
+        },
+        {
+          "q": "Comment Stegocare évite-t-il les doubles réservations ?",
+          "a": "Le système détecte automatiquement les conflits entre rendez-vous qui se chevauchent et absences, à travers collaborateurs et clients, et les signale aussitôt au planificateur."
+        },
+        {
+          "q": "Les intervenants voient-ils immédiatement les changements de planning ?",
+          "a": "Oui, chaque modification apparaît instantanément dans l'application mobile de l'intervenant."
+        }
+      ]
+    },
+    "mobile": {
+      "metaTitle": "Application mobile pour intervenants | Stegocare",
+      "metaDescription": "Planning, enregistrement des visites, kilomètres, frais et congés : l'app Stegocare met toute la journée de travail de l'intervenant sur iOS et Android.",
+      "intro": "Les intervenants travaillent sur la route, pas derrière un bureau. L'app Stegocare amène toute leur journée de travail sur le smartphone : du planning du matin au dernier enregistrement à la porte du client.",
+      "sections": [
+        {
+          "title": "La journée commence dans l'app",
+          "body": "Chaque intervenant voit son planning personnel du jour et du mois, toujours à jour. Si quelque chose bouge, la modification apparaît immédiatement, notification push comprise."
+        },
+        {
+          "title": "Enregistrer sur le moment",
+          "body": "L'enregistrement du temps démarre et s'arrête à la porte du client. Déplacements, temps de trajet et frais avec justificatifs sont saisis sur place, rien ne doit être reconstitué le soir."
+        },
+        {
+          "title": "Moins d'appels au bureau",
+          "body": "Demander et suivre des congés, téléverser des documents en photo ou PDF, consulter le répertoire téléphonique et lire les actualités de l'organisation : tout se fait depuis le smartphone."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Sur quels appareils l'app Stegocare fonctionne-t-elle ?",
+          "a": "L'application est disponible sur iOS et Android."
+        },
+        {
+          "q": "Les intervenants peuvent-ils enregistrer frais et kilomètres dans l'app ?",
+          "a": "Oui. Déplacements, temps de trajet et frais avec justificatifs sont enregistrés sur le moment et remboursés selon les règles de votre organisation."
+        },
+        {
+          "q": "Les intervenants sont-ils notifiés des changements ?",
+          "a": "Oui, des notifications push les avertissent des changements de planning, des congés approuvés et des messages du bureau."
+        }
+      ]
+    },
+    "clients": {
+      "metaTitle": "Gestion des clients pour les soins à domicile | Stegocare",
+      "metaDescription": "Dossiers clients complets avec statut de soins, tarifs, réseau de contacts et parcours guidés d'admission et de révision, le tout au même endroit.",
+      "intro": "Organiser les soins, c'est voir l'ensemble du tableau : statut de soins, régime tarifaire, situation familiale et historique. Stegocare rassemble chaque dossier client en un seul endroit, du premier appel au suivi quotidien.",
+      "sections": [
+        {
+          "title": "Un dossier qui grandit avec le client",
+          "body": "Chaque dossier contient le statut de soins, les régimes tarifaires, les suspensions et l'historique complet des soins. Fouiller dans des classeurs ou d'anciens systèmes appartient au passé."
+        },
+        {
+          "title": "Admission et révision d'une main sûre",
+          "body": "Des parcours guidés accompagnent vos collaborateurs du premier contact au dossier finalisé, visite à domicile comprise, avec une chronologie complète des événements."
+        },
+        {
+          "title": "Le réseau autour du client",
+          "body": "Famille, médecins et autres prestataires figurent au dossier comme réseau de contacts, et les documents sont conservés là où ils doivent être : chez le client."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Que contient un dossier client dans Stegocare ?",
+          "a": "Le statut de soins, les régimes tarifaires, les suspensions, le réseau de contacts, les documents et une chronologie complète des événements."
+        },
+        {
+          "q": "Stegocare prend-il en charge les visites d'admission et de révision ?",
+          "a": "Oui. Des parcours guidés accompagnent vos collaborateurs, et les formulaires associés comme le F51 sont générés préremplis."
+        },
+        {
+          "q": "Les données clients sont-elles en sécurité dans Stegocare ?",
+          "a": "Oui. Stegocare tourne sur AWS dans l'UE, avec un accès basé sur les rôles et des journaux d'audit qui masquent les données personnelles."
+        }
+      ]
+    },
+    "documents": {
+      "metaTitle": "Documents et formulaires comme le F51 | Stegocare",
+      "metaDescription": "Générez des formulaires officiels comme le F51 préremplis depuis le dossier client et gérez les documents signés dans le lecteur intégré.",
+      "intro": "La paperasse officielle fait partie des soins, mais pas la ressaisie. Stegocare génère les formulaires à partir des données déjà présentes dans le dossier et garde tout le parcours, du téléchargement à l'exemplaire signé, dans un seul flux.",
+      "sections": [
+        {
+          "title": "Le F51 sans ressaisie",
+          "body": "Pour les visites d'admission et de révision, Stegocare génère les formulaires officiels, comme le F51, en PDF préremplis à partir du dossier client. Téléchargez-les avant la visite et ajustez les données si nécessaire."
+        },
+        {
+          "title": "De la signature au dossier",
+          "body": "L'exemplaire signé revient directement dans le dossier client. La boucle administrative est bouclée, sans mails ni classeurs éparpillés."
+        },
+        {
+          "title": "Tout s'ouvre dans l'app",
+          "body": "Le lecteur intégré de PDF et de documents ouvre les fichiers directement dans Stegocare, sans logiciel externe. Les PDF de factures générés à partir des prestations enregistrées s'y trouvent aussi."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Quels formulaires Stegocare génère-t-il automatiquement ?",
+          "a": "Entre autres le F51 pour les visites d'admission et de révision, prérempli depuis le dossier client, ainsi que les PDF de factures basés sur les prestations enregistrées."
+        },
+        {
+          "q": "Puis-je téléverser les documents signés ?",
+          "a": "Oui. Télécharger, ajuster les données et téléverser l'exemplaire signé se fait en un seul flux, directement dans le dossier."
+        },
+        {
+          "q": "Ai-je besoin d'un logiciel externe pour consulter les documents ?",
+          "a": "Non, le lecteur intégré ouvre les PDF et documents directement dans l'application."
+        }
+      ]
+    },
+    "timeAndTravel": {
+      "metaTitle": "Enregistrement du temps et indemnités kilométriques | Stegocare",
+      "metaDescription": "Heures, temps de trajet, kilomètres et frais enregistrés dans l'app, puis vérifiés, corrigés et verrouillés par période par le backoffice.",
+      "intro": "Des salaires et des factures corrects commencent par des enregistrements corrects. Dans Stegocare, les intervenants enregistrent leurs heures pendant qu'ils travaillent, et le backoffice garde le contrôle total sur ce qui devient définitif.",
+      "sections": [
+        {
+          "title": "Enregistré là où ça se passe",
+          "body": "Les heures sont enregistrées dans l'application mobile pendant la journée de travail. Le temps de trajet et les kilomètres entre visites sont saisis et remboursés selon les règles de votre organisation."
+        },
+        {
+          "title": "Vérifier avant que ça compte",
+          "body": "Un flux de contrôle intégré permet au backoffice de vérifier et corriger les prestations avant qu'elles ne partent vers la paie et la facturation."
+        },
+        {
+          "title": "Verrouillé, c'est verrouillé",
+          "body": "Les périodes sont clôturées et verrouillées. Une fois verrouillés, les chiffres ne bougent plus : la paie et la facturation reposent sur du solide."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Comment les intervenants enregistrent-ils leurs heures ?",
+          "a": "Dans l'application mobile, sur le moment : l'enregistrement démarre et s'arrête à la porte du client."
+        },
+        {
+          "q": "Les kilomètres et le temps de trajet sont-ils remboursés ?",
+          "a": "Le temps de trajet et les kilomètres entre visites sont saisis et remboursés selon les règles définies par votre organisation."
+        },
+        {
+          "q": "Une période enregistrée peut-elle encore changer ?",
+          "a": "Le backoffice peut vérifier et corriger les prestations jusqu'au verrouillage de la période. Ensuite, les chiffres ne bougent plus."
+        }
+      ]
+    },
+    "vesta": {
+      "metaTitle": "Soumission Vesta et rapports | Stegocare",
+      "metaDescription": "Les prestations de soins partent vers Vesta sans ressaisie, avec rapports de réconciliation et aperçus des codes salariaux pour la paie.",
+      "intro": "Qui offre de l'aide aux familles en Flandre rapporte à Vesta. Stegocare parle cette langue nativement : les données de prestations circulent sans ressaisie, et les rapports montrent exactement ce qui a été soumis.",
+      "sections": [
+        {
+          "title": "Soumettre sans ressaisie",
+          "body": "Les prestations de soins sont soumises à Vesta depuis Stegocare, directement sur la base des enregistrements de vos intervenants. La ressaisie manuelle dans le système d'enregistrement du gouvernement flamand appartient au passé."
+        },
+        {
+          "title": "Une réconciliation qui tient la route",
+          "body": "Les rapports de réconciliation montrent exactement ce qui a été soumis et facturé, pour que enregistrement et facturation concordent toujours."
+        },
+        {
+          "title": "Prêt pour la paie",
+          "body": "Les aperçus des codes salariaux et des prestations sont prêts pour le transfert vers votre traitement de la paie ou votre secrétariat social."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qu'est-ce que Vesta ?",
+          "a": "Vesta est le système d'enregistrement du gouvernement flamand pour l'aide aux familles, où les services agréés soumettent leurs prestations de soins."
+        },
+        {
+          "q": "Dois-je ressaisir manuellement les prestations dans Vesta ?",
+          "a": "Non, Stegocare soumet les prestations de soins directement sur la base des données enregistrées."
+        },
+        {
+          "q": "Comment savoir si tout a été soumis correctement ?",
+          "a": "Les rapports de réconciliation montrent exactement ce qui a été soumis et facturé, les écarts apparaissent donc immédiatement."
+        }
+      ]
+    },
+    "invoicing": {
+      "metaTitle": "Logiciel de facturation pour les soins à domicile | Stegocare",
+      "metaDescription": "Factures construites automatiquement à partir des prestations enregistrées et de la situation tarifaire du client, avec génération de PDF et notes de crédit.",
+      "intro": "Entre les soins prestés et la facture envoyée, beaucoup d'organisations perdent des heures de comptage. Stegocare construit les factures automatiquement à partir des prestations enregistrées et de la situation tarifaire de chaque client.",
+      "sections": [
+        {
+          "title": "De la prestation à la facture",
+          "body": "Chaque prestation enregistrée trouve automatiquement sa place sur la bonne facture, au tarif qui s'applique à ce client."
+        },
+        {
+          "title": "Des tarifs justes",
+          "body": "La situation tarifaire du client est appliquée à la construction de chaque facture. Plus de listes à tenir à part."
+        },
+        {
+          "title": "PDF et notes de crédit compris",
+          "body": "Les factures partent en PDF, et les notes de crédit comme les factures manuelles ont leur place dans le même module."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Comment les factures sont-elles construites ?",
+          "a": "Automatiquement, sur la base des prestations enregistrées et de la situation tarifaire du client, génération de PDF comprise."
+        },
+        {
+          "q": "Puis-je aussi créer des notes de crédit et des factures manuelles ?",
+          "a": "Oui, en plus des factures générées automatiquement, le module de facturation prend en charge les notes de crédit et les factures manuelles."
+        },
+        {
+          "q": "La facturation est-elle liée à Vesta ?",
+          "a": "Oui, les rapports de réconciliation montrent exactement ce qui a été soumis et facturé, les deux concordent donc toujours."
+        }
+      ]
+    }
+  },
+  "contactPage": {
+    "metaTitle": "Contact | Stegocare",
+    "metaDescription": "Contactez l'équipe Stegocare : écrivez-nous, passez nous voir au Brain Embassy à Anvers ou demandez directement une démo.",
+    "heading": "Contact",
+    "intro": "Des questions sur Stegocare ? Écrivez-nous, passez au bureau ou demandez directement une démo.",
+    "visit": {
+      "title": "Passez nous voir",
+      "body": "Notre équipe travaille depuis Brain Embassy, au cœur d'Anvers.",
+      "maps": "Afficher sur la carte"
+    },
+    "mail": {
+      "title": "Écrivez-nous",
+      "body": "Pour des questions, démos ou partenariats. Nous répondons dans un jour ouvrable.",
+      "demoHint": "Vous préférez voir Stegocare en action tout de suite ?",
+      "demoLink": "Demander une démo"
+    },
+    "company": {
+      "title": "Données de l'entreprise",
+      "name": "LVDM Consultancy BV",
+      "vat": "TVA BE 1026.858.232",
+      "seatLabel": "Siège social",
+      "seat": "Lange Dijkstraat 38/101, 2060 Anvers",
+      "note": "Le siège social n'est pas une adresse de visite : vous nous trouverez au Brain Embassy.",
+      "websiteLabel": "Site web"
+    }
+  },
+  "demoPage": {
+    "metaTitle": "Demander une démo | Stegocare",
+    "metaDescription": "Réservez une démo de 30 minutes et découvrez comment Stegocare, logiciel pour l'aide aux familles et les soins à domicile, s'adapte à votre organisation.",
+    "heading": "Demander une démo",
+    "intro": "Dites-nous brièvement qui vous êtes et nous vous contacterons pour planifier une démo. Sans engagement, sans discours commercial : nous montrons simplement comment Stegocare fonctionne, à partir de votre situation.",
+    "highlights": [
+      "30 minutes, en ligne ou dans vos bureaux",
+      "Adaptée au fonctionnement de votre organisation",
+      "Toutes vos questions, répondues par les développeurs eux-mêmes"
+    ],
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse e-mail",
+      "organisation": "Organisation",
+      "employees": "Nombre de collaborateurs",
+      "employeesPlaceholder": "Faites un choix",
+      "message": "Message (facultatif)",
+      "messagePlaceholder": "Des points à aborder en particulier ?",
+      "submit": "Envoyer la demande",
+      "sending": "Envoi en cours...",
+      "successTitle": "Merci pour votre demande !",
+      "successBody": "Nous vous contactons dans un jour ouvrable pour planifier la démo.",
+      "error": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer dans un instant.",
+      "privacy": "Nous utilisons vos données uniquement pour le suivi de votre demande de démo. Elles ne sont jamais partagées avec des tiers."
+    }
+  },
   "security": {
     "title": "Les données de vos clients méritent aussi des soins cliniques",
     "description": "Les données de santé sont sensibles par définition. Stegocare tourne sur une infrastructure AWS avec authentification de niveau entreprise, accès basé sur les rôles et journalisation qui masque les données personnelles par conception. Les pistes d'audit sont la norme, pas une option.",
@@ -93,16 +410,21 @@
       "nis2": "Conforme NIS2"
     }
   },
+  "builders": {
+    "title": "Les bâtisseurs derrière Stegocare",
+    "description": "Stegocare est une collaboration entre LVDM Consultancy et Gezinszorg Villers : des développeurs logiciels et une organisation d'aide à domicile qui construisent côte à côte. Chaque fonctionnalité est façonnée, testée et mise à l'épreuve sur le terrain du soin avant sa mise en service. Car le meilleur logiciel de soins se construit avec les intervenants, pas seulement pour eux.",
+    "imageAlt": "L'équipe Stegocare au travail"
+  },
   "closingCta": {
     "title": "Prêt à rendre leur semaine à vos planificateurs ?",
-    "description": "Découvrez en 30 minutes comment Stegocare s'intègre à votre organisation.",
+    "description": "Découvrez en 30 minutes comment le logiciel Stegocare s'intègre à votre service d'aide aux familles ou de soins à domicile.",
     "ctaPrimary": "Demander une démo",
     "ctaSecondary": "Contactez-nous"
   },
   "footer": {
-    "tagline": "Stegocare. Planification, enregistrement et facturation pour les organisations d'aide à domicile.",
+    "tagline": "Stegocare. Logiciel pour l'aide aux familles et les soins à domicile : planification, enregistrement et facturation dans une seule plateforme.",
     "navigation": "Navigation",
-    "copyright": "© {year} Stegocare par LVDM Consultancy et Villers vzw. Tous droits réservés.",
+    "copyright": "© {year} Stegocare par LVDM Consultancy et Gezinszorg Villers. Tous droits réservés.",
     "privacyPolicy": "Politique de Confidentialité",
     "termsOfService": "Conditions d'Utilisation"
   }
