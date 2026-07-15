@@ -427,6 +427,7 @@
     "navigation": "Navigation",
     "copyright": "© {year} Stegocare by LVDM Consultancy and Gezinszorg Villers. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "status": "Status"
   }
 }

@@ -83,6 +83,14 @@ export default function Footer() {
             >
               {t("termsOfService")}
             </a>
+            <a
+              href="https://status.stego.care"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-white/75 transition-colors hover:text-white"
+            >
+              {t("status")}
+            </a>
           </div>
         </div>
       </div>
